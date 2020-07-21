@@ -39,7 +39,6 @@ namespace UnitTestProject1
             req.Trailerid = "";
             req.Passtime = "2020-06-20 01:18:16";
             req.Operator = "Operator";
-            //req.Sign = 
         }
 
         [TestMethod]
