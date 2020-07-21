@@ -142,7 +142,7 @@ namespace UnitTestProject1
         public void Test6()
         {
          
-            //新增门禁日志
+            //测试 新增门禁日志
             GateLog gatelog = new GateLog
             {
                 Tractorid = "闽B123456",
