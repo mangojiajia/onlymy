@@ -1,0 +1,206 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Int.BaseInfo;
+using BaseS.Serialization;
+using Yongrong.Srvc.BaseInfo;
+using BaseS.String;
+using Yongrong.Srvc.Users;
+using System.IO;
+using Microsoft.AspNetCore.Http;
+using BaseS.File;
+using System.Data;
+using BaseS.Data;
+
+namespace Yongrong.Int.BaseInfo
+{
+    class BaseTractorInt : BaseInt
+    {
+
+        /// <summary>
+        /// 查询牵引车
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] Get(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            BaseTractorRsp rsp = new BaseTractorRsp();
+
+            reqbytes.Json2ObjT<BaseTractorReq>(out BaseTractorReq req);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            if (Sys.CustomRole.Contains(user.Roleids))
+            {
+                req.Query.Transport = user.Userid;
+            }
+
+
+            BaseTractorSrvc.Get(
+                req.Query,
+                req.Page,
+                out var TractorList);
+
+            if (null == req.Page)
+            {
+                rsp.Page = new Model.Int.PageBean();
+            }
+            else
+            {
+                req.Page.CopyPage(rsp.Page);
+            }
+
+            rsp.Stat = Success;
+            rsp.List = TractorList;
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"查询牵引车");
+
+            return rsp.ToBytes();
+        }
+
+
+        /// <summary>
+        /// 添加牵引车信息
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] AddUpd(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            BaseTractorAddRsp rsp = new BaseTractorAddRsp();
+
+            reqbytes.Json2ObjT<BaseTractorAddReq>(out BaseTractorAddReq req);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+
+            }
+
+            rsp.Stat = BaseTractorSrvc.AddOrUpdate(req.Tractor, req.Op);
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"{GetOPName(req.Op)}牵引车");
+
+            return rsp.ToBytes();
+        }
+
+
+        /// <summary>
+        /// 上传文件
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] upload(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            BaseTractorAddRsp rsp = new BaseTractorAddRsp();
+
+            string strs = System.Text.Encoding.UTF8.GetString(reqbytes);
+            String[] sArray = strs.Split(System.Environment.NewLine);
+            List<String> list = new List<string>();
+
+            for (int i = 4; i < sArray.Length; i++)
+            {
+                list.Add(sArray[i].Trim());
+            }
+
+            bool isContainHead = true;
+            Dictionary<string, string> columsMap = null;
+            Dictionary<string, string> cmap = new Dictionary<string, string>();
+
+            bool  ok= BCsv.Csv2DataTable(list, out DataTable table, isContainHead , columsMap);
+            bool isProperty = true;
+
+
+            if (ok)
+            {
+                List<String> lists = new List<string>();
+                //lists = BDataTable.ToList<>(table, isProperty);
+            }
+
+            //HttpFileCollectionBase files = Request.Files;
+            //获取上传文件
+            // var file = Request.Files["fileName"];
+
+            //HttpPostedFileBase file = files[i];
+            //string name = file[i].FileName.Split('.')[0];
+            //string extName = Path.GetExtension(file.FileName).ToLower();
+
+            ////获取保存目录的物理路径
+            //if (System.IO.Directory.Exists(Server.MapPath("/UpFiles/DownFiles/ ")) == false)//如果不存在就创建images文件夹
+            //{
+            //    System.IO.Directory.CreateDirectory(Server.MapPath("/UpFiles/DownFiles/ "));
+            //}
+
+            //string path = Server.MapPath("/UpFiles/DownFiles/");
+            //// string fileNewName = Guid.NewGuid().ToString();
+            //string fileNewName = name;
+            //string ImageUrl = path + fileNewName + extName;
+            ////SaveAs将文件保存到指定文件夹中
+            //file.SaveAs(ImageUrl);
+            ////此路径为相对路径，只有把相对路径保存到数据库中图片才能正确显示（不加~为相对路径）
+            //string url = "\\UpFiles\\DownFiles\\" + fileNewName + extName;
+            //string Url = "" + "/UpFiles/DownFiles/" + fileNewName + extName;
+
+
+
+            return rsp.ToBytes();
+        }
+    }
+}

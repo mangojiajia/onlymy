@@ -1,0 +1,208 @@
+﻿<notice>   [07-16 09:08:08 916] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 09:08:08 917] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 09:08:11 950] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 09:08:16 209] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 09:08:16 441] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<info>    [07-16 09:09:09 368] BaseInt.ExecInt                             L:222  <> T:7-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:09:11 143] PdaInt.QueryOrder                           L:157  <I> T:7-Normal-True- ID:()
+	{"Order":"","Sign":"8542DE75E9EFA39D733FB5D55963E676","Time":"1594657668579","Token":null,"Tractor":"闽A5G105"}
+<tip>    [07-16 09:09:11 329] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:pda_queryorder 耗时:1966ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"8542DE75E9EFA39D733FB5D55963E676","Time":"1594657668579","Tractor":"闽A5G105"}
+	应答:{"Stat":"Token为空","Data":null}
+<info>    [07-16 09:09:30 623] BaseInt.ExecInt                             L:222  <> T:4-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:09:33 565] PdaInt.QueryOrder                           L:157  <I> T:4-Normal-True- ID:()
+	{"Order":"","Sign":"8542DE75E9EFA39D733FB5D55963E676","Time":"1594657668579","Token":null,"Tractor":"闽A5G105"}
+<tip>    [07-16 09:09:33 584] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:pda_queryorder 耗时:2961ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"8542DE75E9EFA39D733FB5D55963E676","Time":"1594657668579","Tractor":"闽A5G105"}
+	应答:{"Stat":"Token为空","Data":null}
+<notice>   [07-16 09:43:52 990] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 09:43:52 990] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 09:43:54 710] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 09:43:57 677] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 09:43:57 779] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<info>    [07-16 09:44:13 515] BaseInt.ExecInt                             L:222  <> T:6-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:44:17 861] PdaInt.QueryOrder                           L:157  <I> T:6-Normal-True- ID:()
+	{"Order":"","Sign":"19940B2CD394DF99DEFEA53E51A3BF63","Time":"1594852858816","Token":"NjM3MzA0NDc0NjU0NzkzMjg5LTE4MDk0Njk2","Tractor":"闽A5G105"}
+<tip>    [07-16 09:44:23 767] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:pda_queryorder 耗时:10259ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"19940B2CD394DF99DEFEA53E51A3BF63","Time":"1594852858816","Token":"NjM3MzA0NDc0NjU0NzkzMjg5LTE4MDk0Njk2","Tractor":"闽A5G105"}
+	应答:{"Stat":"时间戳差距过大","Data":null}
+<info>    [07-16 09:45:49 028] BaseInt.ExecInt                             L:222  <> T:10-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:45:52 116] PdaInt.QueryOrder                           L:157  <I> T:10-Normal-True- ID:()
+	{"Order":"","Sign":"19940B2CD394DF99DEFEA53E51A3BF63","Time":"1594861430096","Token":"NjM3MzA0NDc0NjU0NzkzMjg5LTE4MDk0Njk2","Tractor":"闽A5G105"}
+<tip>    [07-16 09:45:52 214] HttpCtrl.RecvHttpReq                        L:107  <O> T:10-Normal-True- ID:(方法:pda_queryorder 耗时:3185ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"19940B2CD394DF99DEFEA53E51A3BF63","Time":"1594861430096","Token":"NjM3MzA0NDc0NjU0NzkzMjg5LTE4MDk0Njk2","Tractor":"闽A5G105"}
+	应答:{"Stat":"用户不存在","Data":null}
+<info>    [07-16 09:50:11 937] BaseInt.ExecInt                             L:222  <> T:10-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:50:16 490] PdaInt.QueryOrder                           L:157  <I> T:10-Normal-True- ID:()
+	{"Order":"","Sign":"1682d1bf0e3703341c467372f6fb4a22","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+<tip>    [07-16 09:52:25 724] HttpCtrl.RecvHttpReq                        L:107  <O> T:10-Normal-True- ID:(方法:pda_queryorder 耗时:133786ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"1682d1bf0e3703341c467372f6fb4a22","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+	应答:{"Stat":"sign error,Inner:4F01014B22DDAB53F06F5CA6A5E74802 Err:1682d1bf0e3703341c467372f6fb4a22","Data":null}
+<info>    [07-16 09:52:30 493] BaseInt.ExecInt                             L:222  <> T:10-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:52:34 009] PdaInt.QueryOrder                           L:157  <I> T:10-Normal-True- ID:()
+	{"Order":"","Sign":"ef5366e4ad8d71c544711aa2c1a1ab3d","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+<notice>   [07-16 09:55:48 968] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 09:55:48 968] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 09:55:50 167] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 09:55:52 827] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 09:55:52 920] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<info>    [07-16 09:56:33 608] BaseInt.ExecInt                             L:222  <> T:5-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:56:38 343] PdaInt.QueryOrder                           L:157  <I> T:5-Normal-True- ID:()
+	{"Order":"","Sign":"4f01014b22ddab53f06f5ca6a5e74802","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+<tip>    [07-16 09:57:50 938] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:pda_queryorder 耗时:77338ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"4f01014b22ddab53f06f5ca6a5e74802","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+	应答:{"Stat":"sign error,Inner:4F01014B22DDAB53F06F5CA6A5E74802 Err:4f01014b22ddab53f06f5ca6a5e74802","Data":null}
+<info>    [07-16 09:57:55 103] BaseInt.ExecInt                             L:222  <> T:8-Normal-True- ID:()
+	执行方法:pda_queryorder
+<debug>   [07-16 09:58:00 103] PdaInt.QueryOrder                           L:157  <I> T:8-Normal-True- ID:()
+	{"Order":"","Sign":"4F01014B22DDAB53F06F5CA6A5E74802","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+<debug>   [07-16 09:58:08 661] OrderGoodsSrvc.Get                          L:39   <> T:8-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":"","Ordername":null,"Orderstat":"1","Ordertime":"2020-07-16","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":null,"Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"闵B29860","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-16 09:58:18 160] HttpCtrl.RecvHttpReq                        L:107  <O> T:8-Normal-True- ID:(方法:pda_queryorder 耗时:23056ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_queryorder) 
+ 请求:{"Order":"","Sign":"4F01014B22DDAB53F06F5CA6A5E74802","Time":"1594861430096","Token":"NjM3MjkyNzY2NDk4NDcyMjQ5LTEyMzQ1Njc4OTExNTQ=","Tractor":"闵B29860"}
+	应答:{"Stat":"0","Data":null}
+<notice>   [07-16 10:54:20 285] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 10:54:20 286] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 10:54:21 886] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 10:54:25 109] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 10:54:25 224] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<info>    [07-16 10:54:45 879] BaseInt.ExecInt                             L:222  <> T:4-Normal-True- ID:()
+	执行方法:0301
+<warn>   [07-16 10:54:46 000] BJson.JsonToObj                             L:426  <> T:4-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<debug>   [07-16 10:54:46 000] OrderGoodsInt.Get                           L:39   <I> T:4-Normal-True- ID:()
+	
+<tip>    [07-16 10:54:46 167] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0301 耗时:290ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0301) 
+ 请求:{"Page":{},"Query":"Issendback":"1","Istoexit":"1"},"Token":"NjM3MzA0ODUxNzIyMjU5MTA1LWFkbWluMQ=="}
+	应答:{"Stat":"请求解析失败","Page":{"Count":0,"Index":1,"Row":0,"Size":20},"List":null,"order":null}
+<info>    [07-16 10:54:58 086] BaseInt.ExecInt                             L:222  <> T:4-Normal-True- ID:()
+	执行方法:0301
+<warn>   [07-16 10:54:58 136] BJson.JsonToObj                             L:426  <> T:4-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<debug>   [07-16 10:54:58 136] OrderGoodsInt.Get                           L:39   <I> T:4-Normal-True- ID:()
+	
+<tip>    [07-16 10:54:58 147] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0301 耗时:61ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0301) 
+ 请求:{"Page":{},"Query":"Issendback":"1","Istoexit":"1"},"Token":"NjM3MzA0ODUxNzIyMjU5MTA1LWFkbWluMQ=="}
+	应答:{"Stat":"请求解析失败","Page":{"Count":0,"Index":1,"Row":0,"Size":20},"List":null,"order":null}
+<notice>   [07-16 15:37:54 579] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 15:37:54 580] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 15:37:56 232] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 15:37:59 387] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 15:37:59 479] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<notice>   [07-16 16:07:13 601] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-16 16:07:13 603] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-16 16:07:15 439] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-16 16:07:20 272] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-16 16:07:20 365] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:61个
+<info>    [07-16 16:07:28 739] BaseInt.ExecInt                             L:222  <> T:7-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:07:28 748] ReportInt.GetCustomerPickUp                 L:105  <I> T:7-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020.07.14","Starttime":"2020\/07\/09"}
+<tip>    [07-16 16:08:10 327] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:0606 耗时:41592ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020/07/09","Endtime":"2020.07.14","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"开始时间日期格式不正确","List":null}
+<info>    [07-16 16:10:03 298] BaseInt.ExecInt                             L:222  <> T:5-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:10:03 298] ReportInt.GetCustomerPickUp                 L:105  <I> T:5-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020年07月14日","Starttime":"2020\/07\/09"}
+<tip>    [07-16 16:10:03 313] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0606 耗时:15ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020/07/09","Endtime":"2020年07月14日","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"开始时间日期格式不正确","List":null}
+<info>    [07-16 16:10:10 958] BaseInt.ExecInt                             L:222  <> T:4-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:10:10 980] ReportInt.GetCustomerPickUp                 L:105  <I> T:4-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020年07月14日","Starttime":"2020\/07\/09"}
+<tip>    [07-16 16:10:10 991] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0606 耗时:33ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020/07/09","Endtime":"2020年07月14日","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"开始时间日期格式不正确","List":null}
+<info>    [07-16 16:10:37 703] BaseInt.ExecInt                             L:222  <> T:11-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:10:37 707] ReportInt.GetCustomerPickUp                 L:105  <I> T:11-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020年07月14日","Starttime":null}
+<tip>    [07-16 16:10:37 726] HttpCtrl.RecvHttpReq                        L:107  <O> T:11-Normal-True- ID:(方法:0606 耗时:22ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Endtime":"2020年07月14日","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"开始时间不能为空","List":null}
+<info>    [07-16 16:10:59 140] BaseInt.ExecInt                             L:222  <> T:5-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:10:59 141] ReportInt.GetCustomerPickUp                 L:105  <I> T:5-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020年07月14日","Starttime":"2020-07-09"}
+<tip>    [07-16 16:10:59 153] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0606 耗时:13ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020-07-09","Endtime":"2020年07月14日","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"结束时间日期格式不正确","List":null}
+<info>    [07-16 16:11:49 551] BaseInt.ExecInt                             L:222  <> T:7-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:11:49 552] ReportInt.GetCustomerPickUp                 L:105  <I> T:7-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020\/07月14日","Starttime":"2020-07-09"}
+<tip>    [07-16 16:11:49 565] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:0606 耗时:13ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020-07-09","Endtime":"2020/07月14日","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"结束时间日期格式不正确","List":null}
+<info>    [07-16 16:12:00 031] BaseInt.ExecInt                             L:222  <> T:7-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:12:00 050] ReportInt.GetCustomerPickUp                 L:105  <I> T:7-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020\/07\/14","Starttime":"2020-07-09"}
+<tip>    [07-16 16:12:00 060] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:0606 耗时:29ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020-07-09","Endtime":"2020/07/14","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"结束时间日期格式不正确","List":null}
+<info>    [07-16 16:12:10 763] BaseInt.ExecInt                             L:222  <> T:4-Normal-True- ID:()
+	执行方法:0606
+<debug>   [07-16 16:12:10 764] ReportInt.GetCustomerPickUp                 L:105  <I> T:4-Normal-True- ID:()
+	{"Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ==","Endtime":"2020-07-14 23:59:59","Starttime":"2020-07-09"}
+<debug>   [07-16 16:12:10 985] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:3 Spend:2.6294
+<tip>    [07-16 16:12:11 000] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0606 耗时:236ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0606) 
+ 请求:{"Starttime":"2020-07-09","Endtime":"2020-07-14","Token":"NjM3MzA1MTA2NTEyMDAwNDgzLWFkbWluMQ=="}
+	应答:{"Stat":"0","List":[{"Dataday":"2020-07-09","TotalLoad":0},{"Dataday":"2020-07-10","TotalLoad":12.6},{"Dataday":"2020-07-11","TotalLoad":0},{"Dataday":"2020-07-12","TotalLoad":0},{"Dataday":"2020-07-13","TotalLoad":20.4},{"Dataday":"2020-07-14","TotalLoad":26.4}]}

@@ -1,0 +1,135 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Int.BaseInfo;
+using BaseS.Serialization;
+using Yongrong.Srvc.BaseInfo;
+using Yongrong.Srvc.Users;
+using BaseS.String;
+
+namespace Yongrong.Int.BaseInfo
+{
+    class BaseTrailerInt:BaseInt
+    {
+        /// <summary>
+        /// 获取挂车信息
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] Get(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            BaseTrailerRsp rsp = new BaseTrailerRsp();
+
+            reqbytes.Json2ObjT<BaseTrailerReq>(out BaseTrailerReq req);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            if (Sys.CustomRole.Contains(user.Roleids))
+            {
+                req.Query.Transport = user.Userid;
+            }
+
+            BaseTrailerSrvc.Get(
+                req.Query,
+                req.Page,
+                out var TrailersList);
+
+            if (null == req.Page)
+            {
+                rsp.Page = new Model.Int.PageBean();
+            }
+            else
+            {
+                req.Page.CopyPage(rsp.Page);
+            }
+
+            rsp.Stat = Success;
+            rsp.TrailersList = TrailersList;
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"查询挂车");
+
+            return rsp.ToBytes();
+        }
+
+
+        /// <summary>
+        /// 添加挂车信息
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] AddUpd(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            BaseTrailerAddRsp rsp = new BaseTrailerAddRsp();
+
+            reqbytes.Json2ObjT<BaseTrailerAddReq>(out BaseTrailerAddReq req);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+                
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            rsp.Stat = BaseTrailerSrvc.AddOrUpdate(req.Trailer, req.Op);
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"{GetOPName(req.Op)}挂车");
+
+            return rsp.ToBytes();
+        }
+    }
+}

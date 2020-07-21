@@ -1,0 +1,16 @@
+﻿{
+"GateFlag":false,
+"Url":"http://192.168.1.160:80",
+"Appkey":"848c11a2",
+"Secret":"213f524e72674e06ba7d46da2fb61225",
+"EventCmdInvalid":[6],
+"InitMq":false,
+"MqUrl":"192.168.1.160:61618",
+"MqTopic":"openapi.pms.topic",
+"AppRemark":"智能物流",
+"GateSouthFlag":false,
+"EnterTimeSpan":0.5,
+"GateNorthUuid":"5350e5c9bc9747a7ad2c253da74f68f7",
+"GateSouthUuid":"",
+"InvalidParkings":["东门出入口","二道岗"]
+}

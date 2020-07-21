@@ -1,0 +1,9 @@
+D:\yongrong\Base\BaseS\bin\Debug\netstandard2.0\BaseS.deps.json
+D:\yongrong\Base\BaseS\bin\Debug\netstandard2.0\BaseS.dll
+D:\yongrong\Base\BaseS\bin\Debug\netstandard2.0\BaseS.pdb
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.AssemblyInfoInputs.cache
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.AssemblyInfo.cs
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.csproj.CoreCompileInputs.cache
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.dll
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.pdb
+D:\yongrong\Base\BaseS\obj\Debug\netstandard2.0\BaseS.csprojAssemblyReference.cache

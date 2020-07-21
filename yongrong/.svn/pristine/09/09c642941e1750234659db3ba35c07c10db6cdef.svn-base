@@ -1,0 +1,11 @@
+﻿{
+"ReleaseFlag":false,
+"BlockIp":[],
+"TimeTaskDueTime":3000,
+"TimeTaskPeriod":3000,
+"TokenValidHours":3.0,
+"SysTimeSpan":3600000.0,
+"ICClients":["127.0.0.1"],
+"SaleRole":["销售采购部","管理员"],
+"CustomRole":["销售客户","供应商"]
+}

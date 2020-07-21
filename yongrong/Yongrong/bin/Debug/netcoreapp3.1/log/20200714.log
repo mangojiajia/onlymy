@@ -1,0 +1,210 @@
+﻿<notice>   [07-14 08:53:44 361] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 08:53:44 362] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 08:53:48 191] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 08:53:53 429] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 08:53:53 690] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 08:54:38 059] BaseInt.ExecInt                             L:218  <> T:4-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 08:54:54 523] PhoneInt.Login                              L:39   <I> T:4-Normal-True- ID:()
+	{"Token":null,"Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":"1594345396000","Uid":"福建港祥船务有限公司"}
+<tip>    [07-14 08:55:41 356] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:phone_login 耗时:63300ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Token":null,"Uid":"福建港祥船务有限公司","Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":1594345396000}
+	应答:{"Stat":"0","Expire":"2020-07-15 08:55:29","Id":51,"Roleid":"销售客户","Token":"NjM3MzAzMTM3MTU4MTcwMTQ0Leemj+W7uua4r+elpeiIueWKoeaciemZkOWFrOWPuDUx"}
+<info>    [07-14 08:57:44 213] BaseInt.ExecInt                             L:218  <> T:4-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:00:01 552] PhoneInt.Login                              L:39   <I> T:4-Normal-True- ID:()
+	{"Token":null,"Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":"1594345396000","Uid":"福建港祥船务有限公司"}
+<debug>   [07-14 09:00:01 555] TimerCtrl.AllTask                           L:117  <> T:17-Normal-True- ID:()
+	小时任务开始
+<debug>   [07-14 09:00:01 555] TimerCtrl.AllTask                           L:119  <> T:17-Normal-True- ID:()
+	小时任务结束
+<tip>    [07-14 09:01:41 686] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:phone_login 耗时:237473ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Token":null,"Uid":"福建港祥船务有限公司","Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":1594345396000}
+	应答:{"Stat":"0","Expire":"2020-07-15 09:00:04","Id":51,"Roleid":"销售客户","Token":"NjM3MzAzMTM3MTU4MTcwMTQ0Leemj+W7uua4r+elpeiIueWKoeaciemZkOWFrOWPuDUx"}
+<notice>   [07-14 09:16:02 469] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 09:16:02 470] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 09:16:03 809] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 09:16:06 600] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 09:16:06 700] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 09:16:25 851] BaseInt.ExecInt                             L:218  <> T:6-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:16:33 237] PhoneInt.Login                              L:39   <I> T:6-Normal-True- ID:()
+	{"Token":null,"Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":"1594345396000","Uid":"15088725378"}
+<warn>   [07-14 09:16:51 250] BaseDb.SaveChanges                          L:61   <> T:6-Normal-True- ID:(DbUpdateException 提交异常)
+	Err:Abnormal add - An error occurred while updating the entries. See the inner exception for details. InnerErr:ORA-00001: 违反唯一约束条件 (YR.keyabnormal1)
+ORA-06512: 在 line 3    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Yongrong.Db.BaseDb.SaveChanges(YrContext db, String Err) in D:\yongrong\Yongrong\Db\BaseDb.cs:line 53
+<tip>    [07-14 09:17:16 253] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:phone_login 耗时:58776ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Token":null,"Uid":"15088725378","Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":1594345396000}
+	应答:{"Stat":"密码错误","Expire":null,"Id":0,"Roleid":null,"Token":null}
+<info>    [07-14 09:17:35 994] BaseInt.ExecInt                             L:218  <> T:7-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:17:39 172] PhoneInt.Login                              L:39   <I> T:7-Normal-True- ID:()
+	{"Token":null,"Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":"1594345396000","Uid":"15088725379"}
+<tip>    [07-14 09:17:52 303] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:phone_login 耗时:23897ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Token":null,"Uid":"15088725379","Sign":"1CED59BB539DEEB98EDF71CF78462441","Time":1594345396000}
+	应答:{"Stat":"用户不存在","Expire":null,"Id":0,"Roleid":null,"Token":null}
+<info>    [07-14 09:27:38 520] BaseInt.ExecInt                             L:218  <> T:22-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:27:44 053] PhoneInt.Login                              L:39   <I> T:22-Normal-True- ID:()
+	{"Token":null,"Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":"1594348487000","Uid":"15088725378"}
+<tip>    [07-14 09:28:53 654] HttpCtrl.RecvHttpReq                        L:107  <O> T:22-Normal-True- ID:(方法:phone_login 耗时:75133ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Uid":"15088725378","Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":1594348487000}
+	应答:{"Stat":"0","Expire":"2020-07-15 09:27:48","Id":75,"Roleid":"驾驶员","Token":"NjM3MzAzMTQ5OTQyMzMxNTE3LTE1MDg4NzI1Mzc4NzU="}
+<info>    [07-14 09:29:07 713] BaseInt.ExecInt                             L:218  <> T:28-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:29:25 471] PhoneInt.Login                              L:39   <I> T:28-Normal-True- ID:()
+	{"Token":null,"Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":"1594348487000","Uid":"15088725379"}
+<tip>    [07-14 09:30:11 590] HttpCtrl.RecvHttpReq                        L:107  <O> T:28-Normal-True- ID:(方法:phone_login 耗时:62232ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Uid":"15088725379","Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":1594348487000}
+	应答:{"Stat":"用户不存在","Expire":null,"Id":0,"Roleid":null,"Token":null}
+<notice>   [07-14 09:35:28 038] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 09:35:28 038] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 09:35:28 979] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 09:35:31 828] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 09:35:31 915] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 09:35:46 512] BaseInt.ExecInt                             L:218  <> T:7-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:35:52 419] PhoneInt.Login                              L:39   <I> T:7-Normal-True- ID:()
+	{"Token":null,"Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":"1594348487000","Uid":"15088725379"}
+<notice>   [07-14 09:45:34 687] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 09:45:34 687] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 09:45:36 235] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 09:45:39 319] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 09:45:39 416] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 09:46:47 616] BaseInt.ExecInt                             L:218  <> T:11-Normal-True- ID:()
+	执行方法:phone_login
+<debug>   [07-14 09:47:04 455] PhoneInt.Login                              L:39   <I> T:11-Normal-True- ID:()
+	{"Token":null,"Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":"1594348487000","Uid":"15088725379"}
+<tip>    [07-14 09:47:16 658] HttpCtrl.RecvHttpReq                        L:107  <O> T:11-Normal-True- ID:(方法:phone_login 耗时:29049ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=phone_login) 
+ 请求:{"Uid":"15088725379","Sign":"31BD7700C569CCE4D87BE5801092CDDA","Time":1594348487000}
+	应答:{"Stat":"用户不存在","Expire":null,"Id":0,"Roleid":null,"Token":null}
+<notice>   [07-14 10:42:29 660] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 10:42:29 661] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 10:42:31 406] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 10:42:35 201] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 10:42:35 295] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 10:44:16 767] BaseInt.ExecInt                             L:218  <> T:10-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-14 10:44:20 920] WeighbridgeInt.RecvWeigh                    L:34   <I> T:10-Normal-True- ID:()
+	{"Mask_id":"","Msg_id":"2B202006260011","Operator":"","Order_id":"0015","Order_type":null,"Passtime":"2020-06-26 12:38:57","Sign":"def5295b29bc61495aa525dd94333201","Tractor_id":"浙A12345","Trailer_id":"浙A12345","Weigh_time":"2","Weight":""}
+<tip>    [07-14 10:44:55 051] HttpCtrl.RecvHttpReq                        L:107  <O> T:10-Normal-True- ID:(方法:weighresult 耗时:38287ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+    "Order_id": "0015",
+    "Msg_id": "2B202006260011",
+    "Weigh_time": "2",
+    "Tractor_id": "浙A12345",
+    "Trailer_id": "浙A12345",
+    "Entertime": "2020-06-26 12:38:57",
+    "Weight": "",
+    "Passtime": "2020-06-26 12:38:57",
+    "Mask_id": "",
+    "Operator": "",
+    "Sign": "def5295b29bc61495aa525dd94333201"
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-14 10:44:58 817] BaseInt.ExecInt                             L:218  <> T:12-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-14 10:45:01 604] WeighbridgeInt.RecvWeigh                    L:34   <I> T:12-Normal-True- ID:()
+	{"Mask_id":"","Msg_id":"2B202006260011","Operator":"","Order_id":"0015","Order_type":null,"Passtime":"2020-06-26 12:38:57","Sign":"def5295b29bc61495aa525dd94333201","Tractor_id":"浙A12345","Trailer_id":"浙A12345","Weigh_time":"2","Weight":""}
+<debug>   [07-14 10:45:10 543] OrderGoodsSrvc.Get                          L:39   <> T:12-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":"0015","Ordername":null,"Orderstat":"1","Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":null,"Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":null,"Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<warn>   [07-14 10:45:20 217] WeighbridgeInt.RecvWeigh                    L:105  <> T:12-Normal-True- ID:()
+	当日2020-07-14没有此预约信息:预约编码为0015,车牌号为浙A12345的订单
+<tip>    [07-14 10:45:20 233] HttpCtrl.RecvHttpReq                        L:107  <O> T:12-Normal-True- ID:(方法:weighresult 耗时:21415ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+    "Order_id": "0015",
+    "Msg_id": "2B202006260011",
+    "Weigh_time": "2",
+    "Tractor_id": "浙A12345",
+    "Trailer_id": "浙A12345",
+    "Entertime": "2020-06-26 12:38:57",
+    "Weight": "",
+    "Passtime": "2020-06-26 12:38:57",
+    "Mask_id": "",
+    "Operator": "",
+    "Sign": "def5295b29bc61495aa525dd94333201"
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-14 10:46:01 657] BaseInt.ExecInt                             L:218  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-14 10:46:06 813] WeighbridgeInt.RecvWeigh                    L:34   <I> T:4-Normal-True- ID:()
+	{"Mask_id":"","Msg_id":"2B202006260011","Operator":"","Order_id":"0015","Order_type":null,"Passtime":"2020-06-26 12:38:57","Sign":"def5295b29bc61495aa525dd94333201","Tractor_id":"浙A12345","Trailer_id":"浙A12345","Weigh_time":"2","Weight":""}
+<debug>   [07-14 10:46:11 403] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":"0015","Ordername":null,"Orderstat":"1","Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":null,"Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":null,"Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-14 10:46:35 456] WeighbridgeInt.RecvWeigh                    L:186  <> T:4-Normal-True- ID:(提货:False - 2次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"22","Orderid":"0015","Ordername":"01","Orderstat":"1","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"","Taretime":"2020-06-26 12:38:57","Tareweight":"","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-14 10:46:39 995] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:38337ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+    "Order_id": "0015",
+    "Msg_id": "2B202006260011",
+    "Weigh_time": "2",
+    "Tractor_id": "浙A12345",
+    "Trailer_id": "浙A12345",
+    "Entertime": "2020-06-26 12:38:57",
+    "Weight": "",
+    "Passtime": "2020-06-26 12:38:57",
+    "Mask_id": "",
+    "Operator": "",
+    "Sign": "def5295b29bc61495aa525dd94333201"
+}
+	应答:{"Stat":"0","Reserve":null}
+<notice>   [07-14 10:57:23 451] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-14 10:57:23 451] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-14 10:57:24 730] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-14 10:57:27 992] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-14 10:57:28 098] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:60个
+<info>    [07-14 10:57:40 823] BaseInt.ExecInt                             L:218  <> T:6-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-14 10:57:52 941] WeighbridgeInt.RecvWeigh                    L:34   <I> T:6-Normal-True- ID:()
+	{"Mask_id":"","Msg_id":"2B202006260011","Operator":"","Order_id":"0015","Order_type":null,"Passtime":"2020-06-26 12:38:57","Sign":"def5295b29bc61495aa525dd94333201","Tractor_id":"浙A12345","Trailer_id":"浙A12345","Weigh_time":"2","Weight":""}
+<debug>   [07-14 10:58:24 781] OrderGoodsSrvc.Get                          L:39   <> T:6-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":"0015","Ordername":null,"Orderstat":"1","Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":null,"Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":null,"Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}

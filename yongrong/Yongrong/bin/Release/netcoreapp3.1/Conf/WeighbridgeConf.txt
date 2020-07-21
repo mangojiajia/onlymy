@@ -1,0 +1,12 @@
+﻿{
+"WeighFlag":false,
+"ServUrl":"http://47.106.121.76:9981/rest",
+"User_name":"kdapi_test",
+"Passwd":"kdapi@123",
+"Version":"2",
+"Db_name":"rtcMWServer",
+"InsertDbName":"rtcMWServer",
+"InsertSqlCmdId":"newweightorders",
+"WeighIp":["192.168.2.250","127.0.0.1","192.168.1.182"],
+"WeighDelayHour":0.25
+}

@@ -1,0 +1,694 @@
+﻿<notice>   [07-06 13:38:35 812] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 13:38:35 823] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 13:38:39 105] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 13:38:44 111] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 13:38:44 244] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 13:38:56 026] BaseInt.ExecInt                             L:217  <> T:7-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:39:38 221] WeighbridgeInt.RecvWeigh                    L:33   <I> T:7-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":null,"Order_id":null,"Order_type":null,"Passtime":null,"Sign":null,"Tractor_id":null,"Trailer_id":null,"Weigh_time":null,"Weight":null}
+<warn>   [07-06 13:40:29 841] WeighbridgeInt.RecvWeigh                    L:68   <> T:7-Normal-True- ID:()
+	无效的IP地址:192.168.1.182
+<tip>    [07-06 13:40:33 422] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:weighresult 耗时:97407ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+    "ApiWeigh":{
+"Id":100,
+"Ordertype":"",
+"Weightime":"1",
+"Tractorid":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+}
+}
+	应答:{"Stat":"ip block","Reserve":null}
+<info>    [07-06 13:42:58 740] BaseInt.ExecInt                             L:217  <> T:10-Normal-True- ID:()
+	执行方法:weighresult
+<notice>   [07-06 13:43:27 781] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 13:43:27 782] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 13:43:29 224] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 13:43:32 478] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 13:43:32 549] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 13:43:37 505] BaseInt.ExecInt                             L:217  <> T:5-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:43:44 421] WeighbridgeInt.RecvWeigh                    L:33   <I> T:5-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":null,"Trailer_id":null,"Weigh_time":null,"Weight":"22"}
+<warn>   [07-06 13:43:49 793] WeighbridgeInt.RecvWeigh                    L:68   <> T:5-Normal-True- ID:()
+	无效的IP地址:192.168.1.182
+<tip>    [07-06 13:43:49 981] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:weighresult 耗时:12481ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weightime":"1",
+"Tractorid":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"ip block","Reserve":null}
+<notice>   [07-06 13:44:24 276] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 13:44:24 276] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 13:44:25 475] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 13:44:28 962] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 13:44:29 098] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 13:44:33 627] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:44:37 317] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":null,"Trailer_id":null,"Weigh_time":null,"Weight":"22"}
+<notice>   [07-06 13:46:35 303] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 13:46:35 304] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 13:46:36 653] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 13:46:39 887] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 13:46:39 978] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 13:46:41 090] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:46:48 157] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":null,"Trailer_id":null,"Weigh_time":null,"Weight":"22"}
+<debug>   [07-06 13:48:27 228] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":null,"Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 13:50:12 798] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:211711ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weightime":"1",
+"Tractorid":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 13:50:16 481] BaseInt.ExecInt                             L:217  <> T:10-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:51:07 716] WeighbridgeInt.RecvWeigh                    L:33   <I> T:10-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":null,"Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 13:51:07 734] OrderGoodsSrvc.Get                          L:39   <> T:10-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":null,"Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 13:51:07 753] WeighbridgeInt.RecvWeigh                    L:159  <> T:10-Normal-True- ID:(提货:False - 1次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 13:51:07","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":null,"Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 13:51:07 781] OrderGoodsSrvc.RechargeBill                 L:484  <> T:10-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 13:51:07","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":null,"Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 13:51:07 857] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:10-Normal-True- ID:(RechargeBill Stat)
+	0
+<tip>    [07-06 13:51:07 890] HttpCtrl.RecvHttpReq                        L:107  <O> T:10-Normal-True- ID:(方法:weighresult 耗时:51408ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractorid":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 13:51:10 938] BaseInt.ExecInt                             L:217  <> T:15-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:51:19 588] WeighbridgeInt.RecvWeigh                    L:33   <I> T:15-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 13:51:29 379] OrderGoodsSrvc.Get                          L:39   <> T:15-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<warn>   [07-06 13:53:03 207] WeighbridgeInt.RecvWeigh                    L:104  <> T:15-Normal-True- ID:()
+	当日2020-07-06没有此预约信息:车牌号为浙A12345且安检通过的订单
+<tip>    [07-06 13:53:03 215] HttpCtrl.RecvHttpReq                        L:107  <O> T:15-Normal-True- ID:(方法:weighresult 耗时:112276ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 13:53:06 504] BaseInt.ExecInt                             L:217  <> T:15-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:53:11 195] WeighbridgeInt.RecvWeigh                    L:33   <I> T:15-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 13:53:24 131] OrderGoodsSrvc.Get                          L:39   <> T:15-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 13:53:59 611] WeighbridgeInt.RecvWeigh                    L:146  <> T:15-Normal-True- ID:()
+	该预约重复收到一次过磅信息
+<debug>   [07-06 13:54:51 120] WeighbridgeInt.RecvWeigh                    L:200  <> T:15-Normal-True- ID:(提货:False - 2次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 13:51:07","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 13:54:51 826] OrderGoodsSrvc.RechargeBill                 L:484  <> T:15-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 13:51:07","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 13:54:51 836] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:15-Normal-True- ID:(RechargeBill Stat)
+	0
+<tip>    [07-06 13:54:56 294] HttpCtrl.RecvHttpReq                        L:107  <O> T:15-Normal-True- ID:(方法:weighresult 耗时:109790ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 13:57:00 072] BaseInt.ExecInt                             L:217  <> T:7-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:57:07 922] WeighbridgeInt.RecvWeigh                    L:33   <I> T:7-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 13:57:13 844] OrderGoodsSrvc.Get                          L:39   <> T:7-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<warn>   [07-06 13:57:15 359] WeighbridgeInt.RecvWeigh                    L:104  <> T:7-Normal-True- ID:()
+	当日2020-07-06没有此预约信息:车牌号为浙A12345且安检通过的订单
+<warn>   [07-06 13:58:59 079] BaseInt.ExecInt                             L:225  <O> T:7-Normal-True- ID:()
+	方法:weighresult Err:Object reference not set to an instance of an object. 
+ StackTrace:   at Yongrong.Int.Weighbridge.WeighbridgeInt.RecvWeigh(Dictionary`2 reqmap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\Weighbridge\WeighbridgeInt.cs:line 128
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 221 
+ InnerException:
+<tip>    [07-06 13:58:59 090] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:weighresult 耗时:119018ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"未知错误"}
+<info>    [07-06 13:59:02 905] BaseInt.ExecInt                             L:217  <> T:14-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 13:59:12 403] WeighbridgeInt.RecvWeigh                    L:33   <I> T:14-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 13:59:21 607] OrderGoodsSrvc.Get                          L:39   <> T:14-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 13:59:49 051] WeighbridgeInt.RecvWeigh                    L:146  <> T:14-Normal-True- ID:()
+	该预约重复收到一次过磅信息
+<debug>   [07-06 14:00:02 252] TimerCtrl.AllTask                           L:117  <> T:26-Normal-True- ID:()
+	小时任务开始
+<debug>   [07-06 14:00:02 252] TimerCtrl.AllTask                           L:119  <> T:26-Normal-True- ID:()
+	小时任务结束
+<tip>    [07-06 14:00:05 032] HttpCtrl.RecvHttpReq                        L:107  <O> T:14-Normal-True- ID:(方法:weighresult 耗时:62127ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 14:01:55 089] BaseInt.ExecInt                             L:217  <> T:16-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 14:02:06 198] WeighbridgeInt.RecvWeigh                    L:33   <I> T:16-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 14:02:11 524] OrderGoodsSrvc.Get                          L:39   <> T:16-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 14:02:40 187] WeighbridgeInt.RecvWeigh                    L:159  <> T:16-Normal-True- ID:(提货:False - 1次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 14:02:41 150] OrderGoodsSrvc.RechargeBill                 L:484  <> T:16-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 14:02:41 160] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:16-Normal-True- ID:(RechargeBill Stat)
+	0
+<tip>    [07-06 14:02:46 788] HttpCtrl.RecvHttpReq                        L:107  <O> T:16-Normal-True- ID:(方法:weighresult 耗时:51698ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<notice>   [07-06 14:10:43 611] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 14:10:43 612] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 14:10:44 875] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 14:10:47 916] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 14:10:48 017] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 14:10:52 472] BaseInt.ExecInt                             L:217  <> T:5-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 14:10:56 836] WeighbridgeInt.RecvWeigh                    L:33   <I> T:5-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 14:11:08 012] WeighbridgeInt.RecvWeigh                    L:87   <I> T:5-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"1","Weight":"22"}
+<debug>   [07-06 14:11:27 347] OrderGoodsSrvc.Get                          L:39   <> T:5-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<warn>   [07-06 14:11:27 522] WeighbridgeInt.RecvWeigh                    L:104  <> T:5-Normal-True- ID:()
+	当日2020-07-06没有此预约信息:车牌号为浙A12345且安检通过的订单
+<tip>    [07-06 14:11:27 548] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:weighresult 耗时:35080ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"1",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<notice>   [07-06 15:06:37 115] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 15:06:37 116] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 15:06:39 220] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 15:06:42 723] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 15:06:42 824] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 15:07:17 165] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 15:07:31 406] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:07:36 058] WeighbridgeInt.RecvWeigh                    L:87   <I> T:4-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:07:46 808] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 15:08:13 627] WeighbridgeInt.RecvWeigh                    L:199  <> T:4-Normal-True- ID:()
+	该预约重复收到二次过磅信息
+<tip>    [07-06 15:08:13 666] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:56505ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"2",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 15:10:13 664] BaseInt.ExecInt                             L:217  <> T:7-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 15:10:16 506] WeighbridgeInt.RecvWeigh                    L:33   <I> T:7-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:10:16 506] WeighbridgeInt.RecvWeigh                    L:87   <I> T:7-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:10:16 520] OrderGoodsSrvc.Get                          L:39   <> T:7-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:10:16 543] WeighbridgeInt.RecvWeigh                    L:213  <> T:7-Normal-True- ID:(提货:False - 2次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:10:16 578] OrderGoodsSrvc.RechargeBill                 L:484  <> T:7-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 15:10:16 656] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:7-Normal-True- ID:(RechargeBill Stat)
+	0
+<tip>    [07-06 15:10:16 684] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:weighresult 耗时:3019ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"2",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 15:10:38 636] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 15:10:46 633] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:10:50 590] WeighbridgeInt.RecvWeigh                    L:87   <I> T:4-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:10:59 107] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:11:47 100] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:11:50 104] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 15:12:05 557] WeighbridgeInt.RecvWeigh                    L:199  <> T:4-Normal-True- ID:()
+	该预约重复收到二次过磅信息
+<tip>    [07-06 15:12:08 339] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:89702ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"2",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 15:12:32 003] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 15:12:32 003] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:12:32 003] WeighbridgeInt.RecvWeigh                    L:87   <I> T:4-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:12:32 010] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:12:32 027] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<tip>    [07-06 15:12:32 042] WeighbridgeInt.RecvWeigh                    L:199  <> T:4-Normal-True- ID:()
+	该预约重复收到二次过磅信息
+<tip>    [07-06 15:12:32 047] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:44ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"2",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<info>    [07-06 15:12:43 985] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:weighresult
+<debug>   [07-06 15:12:43 986] WeighbridgeInt.RecvWeigh                    L:33   <I> T:4-Normal-True- ID:()
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:12:43 986] WeighbridgeInt.RecvWeigh                    L:87   <I> T:4-Normal-True- ID:(内存中不存在浙A12345的预约)
+	{"Mask_id":null,"Msg_id":null,"Operator":"啦啦啦","Order_id":null,"Order_type":null,"Passtime":"2020-07-06","Sign":null,"Tractor_id":"浙A12345","Trailer_id":null,"Weigh_time":"2","Weight":"22"}
+<debug>   [07-06 15:12:43 995] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"2","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:12:44 012] OrderGoodsSrvc.Get                          L:39   <> T:4-Normal-True- ID:()
+	{"Billcheck":null,"Billid":null,"Capacity":null,"Checkman":null,"Company":null,"Createtime":null,"Customercheck":null,"Driver":null,"Endtime":null,"Goodsid":null,"Goodsname":null,"Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":0,"Indoorman":null,"IsSafeCheck":false,"Issendback":null,"Istoexit":null,"Levelnumber":0,"Loadweight":null,"Netweight":null,"Orderid":null,"Ordername":null,"Orderstat":null,"Ordertime":null,"Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":null,"Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":null,"Transport":null,"Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:12:44 028] WeighbridgeInt.RecvWeigh                    L:213  <> T:4-Normal-True- ID:(提货:False - 2次过磅更新后的预约信息)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:12:44 031] OrderGoodsSrvc.RechargeBill                 L:484  <> T:4-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:04","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":"啦啦啦","Grosstime":"2020-07-06 14:02:35","Grossweight":"22","Id":56,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":"0","Orderid":"0015","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-15","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"10","Remark":null,"Safecheckflag":"3","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":"啦啦啦","Taretime":"2020-07-06","Tareweight":"22","Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 15:12:44 043] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:4-Normal-True- ID:(RechargeBill Stat)
+	0
+<tip>    [07-06 15:12:44 058] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:weighresult 耗时:73ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=weighresult) 
+ 请求:{
+
+"Id":100,
+"Ordertype":"",
+"Weigh_time":"2",
+"Tractor_id":"浙A12345",
+"Trailerid":"",
+"Weight":"22",
+"Passtime":"2020-07-06",
+"Maskid":"",
+"Operator":"啦啦啦"
+
+}
+	应答:{"Stat":"0","Reserve":null}
+<notice>   [07-06 15:20:48 712] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 15:20:48 712] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 15:20:50 305] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 15:20:53 324] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 15:20:53 403] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 15:21:02 339] BaseInt.ExecInt                             L:217  <> T:6-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:21:06 372] PdaInt.SubmitCheck                          L:246  <I> T:6-Normal-True- ID:()
+	{"CheckData":{"Expburn":"合格","Helmet":"合格","Id":57,"Remark":"22","Smock":"合格","Tire":"合格","Uid":null,"Workshoe":"合格"},"Sign":null,"Time":null,"Token":""}
+<tip>    [07-06 15:21:45 822] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:pda_submitcheck 耗时:43491ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_submitcheck) 
+ 请求:{
+"CheckData":{
+"Id":57,
+"Expburn":"合格",
+"Helmet":"合格",
+"Workshoe":"合格",
+"Smock":"合格",
+"Remark":"22",
+"Tire":"合格"
+},"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="
+
+}
+	应答:{"Stat":"时间戳为空","Msg":null}
+<info>    [07-06 15:21:50 453] BaseInt.ExecInt                             L:217  <> T:6-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:21:57 979] PdaInt.SubmitCheck                          L:246  <I> T:6-Normal-True- ID:()
+	{"CheckData":{"Expburn":"合格","Helmet":"合格","Id":57,"Remark":"22","Smock":"合格","Tire":"合格","Uid":null,"Workshoe":"合格"},"Sign":null,"Time":null,"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="}
+<tip>    [07-06 15:22:28 523] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:pda_submitcheck 耗时:38069ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_submitcheck) 
+ 请求:{
+"CheckData":{
+"Id":57,
+"Expburn":"合格",
+"Helmet":"合格",
+"Workshoe":"合格",
+"Smock":"合格",
+"Remark":"22",
+"Tire":"合格"
+},"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="
+
+}
+	应答:{"Stat":"0","Msg":null}
+<info>    [07-06 15:22:31 158] BaseInt.ExecInt                             L:217  <> T:6-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:22:33 237] PdaInt.SubmitCheck                          L:246  <I> T:6-Normal-True- ID:()
+	{"CheckData":{"Expburn":"合格","Helmet":"合格","Id":57,"Remark":"22","Smock":"合格","Tire":"合格","Uid":null,"Workshoe":"合格"},"Sign":null,"Time":null,"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="}
+<warn>   [07-06 15:23:00 916] UserSrvc.GetOne                             L:176  <> T:6-Normal-True- ID:(O)
+	查询条件为空,不返回对象
+<warn>   [07-06 15:23:39 743] UserSrvc.GetOne                             L:176  <> T:6-Normal-True- ID:(O)
+	查询条件为空,不返回对象
+<tip>    [07-06 15:23:42 124] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:pda_submitcheck 耗时:70966ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_submitcheck) 
+ 请求:{
+"CheckData":{
+"Id":57,
+"Expburn":"合格",
+"Helmet":"合格",
+"Workshoe":"合格",
+"Smock":"合格",
+"Remark":"22",
+"Tire":"合格"
+},"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="
+
+}
+	应答:{"Stat":"用户不存在","Msg":null}
+<info>    [07-06 15:23:44 743] BaseInt.ExecInt                             L:217  <> T:12-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:23:49 804] PdaInt.SubmitCheck                          L:246  <I> T:12-Normal-True- ID:()
+	{"CheckData":{"Expburn":"合格","Helmet":"合格","Id":57,"Remark":"22","Smock":"合格","Tire":"合格","Uid":null,"Workshoe":"合格"},"Sign":null,"Time":null,"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="}
+<info>    [07-06 15:24:54 146] PdaInt.SubmitCheck                          L:375  <> T:12-Normal-True- ID:(用户提交请求成功)
+	{"Creater":"admin","Createtime":"2020-04-01 09:00:00","Flashtime":null,"Id":1,"Logintime":null,"Phone":"13312345678","Post":null,"Pwd":"D7130F6E1DE6CB2D6F39DFE0BE2B0EB5","Roleids":"管理员","Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ==","Userid":"admin","Username":"rfrfrf"}
+<tip>    [07-06 15:24:54 158] HttpCtrl.RecvHttpReq                        L:107  <O> T:12-Normal-True- ID:(方法:pda_submitcheck 耗时:69414ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_submitcheck) 
+ 请求:{
+"CheckData":{
+"Id":57,
+"Expburn":"合格",
+"Helmet":"合格",
+"Workshoe":"合格",
+"Smock":"合格",
+"Remark":"22",
+"Tire":"合格"
+},"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="
+
+}
+	应答:{"Stat":"0","Msg":null}
+<info>    [07-06 15:24:57 608] BaseInt.ExecInt                             L:217  <> T:9-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:24:59 163] PdaInt.SubmitCheck                          L:246  <I> T:9-Normal-True- ID:()
+	{"CheckData":{"Expburn":"pass","Helmet":"pass","Id":57,"Remark":"22","Smock":"pass","Tire":"pass","Uid":null,"Workshoe":"pass"},"Sign":null,"Time":null,"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="}
+<info>    [07-06 15:24:59 202] PdaInt.SubmitCheck                          L:375  <> T:9-Normal-True- ID:(用户提交请求成功)
+	{"Creater":"admin","Createtime":"2020-04-01 09:00:00","Flashtime":null,"Id":1,"Logintime":null,"Phone":"13312345678","Post":null,"Pwd":"D7130F6E1DE6CB2D6F39DFE0BE2B0EB5","Roleids":"管理员","Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ==","Userid":"admin","Username":"rfrfrf"}
+<tip>    [07-06 15:24:59 209] HttpCtrl.RecvHttpReq                        L:107  <O> T:9-Normal-True- ID:(方法:pda_submitcheck 耗时:1600ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=pda_submitcheck) 
+ 请求:{
+"CheckData":{
+"Id":57,
+"Expburn":"pass",
+"Helmet":"pass",
+"Workshoe":"pass",
+"Smock":"pass",
+"Remark":"22",
+"Tire":"pass"
+},"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="
+
+}
+	应答:{"Stat":"0","Msg":null}
+<info>    [07-06 15:25:11 783] BaseInt.ExecInt                             L:217  <> T:12-Normal-True- ID:()
+	执行方法:pda_submitcheck
+<debug>   [07-06 15:25:15 228] PdaInt.SubmitCheck                          L:246  <I> T:12-Normal-True- ID:()
+	{"CheckData":{"Expburn":"pass","Helmet":"pass","Id":57,"Remark":"22","Smock":"pass","Tire":"pass","Uid":null,"Workshoe":"pass"},"Sign":null,"Time":null,"Token":"NjM3Mjk2MjIwOTk5Mzg5ODI5LWFkbWluMQ=="}
+<debug>   [07-06 15:26:13 829] OrderGoodsSrvc.RechargeBill                 L:484  <> T:12-Normal-True- ID:(返回扣除的预约数量)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:18","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":57,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":null,"Orderid":"0016","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-16","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"20","Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<info>    [07-06 15:26:13 893] OrderGoodsSrvc.AddOrUpdate                  L:238  <> T:12-Normal-True- ID:(RechargeBill Stat)
+	0
+<debug>   [07-06 15:26:15 668] PdaInt.SubmitCheck                          L:315  <O> T:12-Normal-True- ID:(把浙A12345预约信息写入到内存)
+	{"Billcheck":null,"Billid":"2020061001","Capacity":null,"Checkman":null,"Company":"福建港祥船务有限公司","Createtime":"2020-06-22 10:37:18","Customercheck":null,"Driver":"非凡","Endtime":null,"Goodsid":null,"Goodsname":"硝酸","Goodstypr":null,"Grossman":null,"Grosstime":null,"Grossweight":null,"Id":57,"Indoorman":null,"IsSafeCheck":false,"Issendback":"1","Istoexit":"1","Levelnumber":0,"Loadweight":"50","Netweight":null,"Orderid":"0016","Ordername":"01","Orderstat":"3","Ordertime":"2020-06-16","Outdoorman":null,"Printid":null,"Printman":null,"Printtime":null,"Realweight":"20","Remark":null,"Safecheckflag":"1","Salesman":null,"SerialNumber":null,"Starttime":null,"Storeman":null,"Supercargo":null,"Tareman":null,"Taretime":null,"Tareweight":null,"Tractorid":"浙A12345","Trailerid":"浙A23456","Transport":"福建港祥船务有限公司","Unit":null,"Unitext":null,"Waybillid":null}
+<debug>   [07-06 15:26:15 735] BHttp.PostSync_HttpWebRequest               L:438  <I> T:12-Normal-True- ID:()
+	
+<notice>   [07-06 16:15:50 847] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 16:15:50 847] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 16:15:52 833] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 16:15:56 350] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 16:15:56 476] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 16:16:05 533] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:0106
+<warn>   [07-06 16:16:10 071] BJson.JsonToObj                             L:426  <> T:4-Normal-True- ID:()
+	Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.
+<notice>   [07-06 16:19:14 916] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 16:19:14 916] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 16:19:16 107] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 16:19:19 775] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 16:19:19 860] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 16:19:23 913] BaseInt.ExecInt                             L:217  <> T:4-Normal-True- ID:()
+	执行方法:0106
+<warn>   [07-06 16:19:26 805] BJson.JsonToObj                             L:426  <> T:4-Normal-True- ID:()
+	Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.
+<notice>   [07-06 18:39:23 106] MainCtrl.Start                              L:39   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [07-06 18:39:23 106] MainCtrl.Start                              L:41   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [07-06 18:39:25 298] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [07-06 18:39:29 313] SysConfigSrvc.GetAll                        L:58   <> T:1-Normal-False- ID:()
+	获取到所有配置项:5个
+<info>    [07-06 18:39:29 432] BaseTractorSrvc.GetAllTractorIds            L:115  <> T:1-Normal-False- ID:()
+	获取到所有牵引车:58个
+<info>    [07-06 18:39:36 589] BaseInt.ExecInt                             L:217  <> T:5-Normal-True- ID:()
+	执行方法:0702
+<debug>   [07-06 18:39:40 689] UserPermissionInt.Get                       L:35   <I> T:5-Normal-True- ID:()
+	{"Token":"NjM3Mjk2NDY2NTYzODA0MDQwLWFkbWluMQ==","Page":{"Count":0,"Index":1,"Row":9,"Size":15},"Roleid":""}
+<debug>   [07-06 18:40:03 480] RoleSrvc.Get                                L:35   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Descript":null,"Isenable":null,"Roleid":null,"Rolename":null,"Userid":null}
+<debug>   [07-06 18:40:03 734] RolePermissionSrvc.Get                      L:28   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Roleid":"销售客户"}
+<debug>   [07-06 18:40:03 777] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"dema_sale"}
+<debug>   [07-06 18:40:03 789] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs1"}
+<debug>   [07-06 18:40:03 795] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs2"}
+<debug>   [07-06 18:40:03 798] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs3"}
+<debug>   [07-06 18:40:03 800] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs4"}
+<debug>   [07-06 18:40:03 802] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs5"}
+<debug>   [07-06 18:40:03 804] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs6"}
+<debug>   [07-06 18:40:03 807] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"福建港祥船务有限公司"}
+<debug>   [07-06 18:40:03 809] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"福建省莆田凯松化工厂"}
+<tip>    [07-06 18:40:04 004] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0702 耗时:27418ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0702) 
+ 请求:{"Token":"NjM3Mjk2NDY2NTYzODA0MDQwLWFkbWluMQ==","Page":{"Count":0,"Index":1,"Row":9,"Size":15},"Roleid":""}
+	应答:{"Stat":"0","Page":{"Count":1,"Index":1,"Row":9,"Size":15},"RoleName":"销售客户","RoleNames":["销售客户","供应商","销售采购部","测试部门","管理员"],"RolePs":[{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"装车作业单","P3":["Add","Edit","Del"]}],"Users":[{"Name":"小谢","Phone":"1234567","Post":null,"Pwd":"","RoleId":"销售客户","UserId":"dema_sale","UserPs":[{"P2name":"客户管理","P3":[]},{"P2name":"供应商管理","P3":["Add","Edit"]}]},{"Name":"1234","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs1","UserPs":[{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]}]},{"Name":"124","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs2","UserPs":[{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]}]},{"Name":"125","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs3","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"126","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs4","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"127","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs5","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"128","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs6","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"福建港祥船务有限公司","Phone":"123455","Post":"销售客户","Pwd":"","RoleId":"销售客户","UserId":"福建港祥船务有限公司","UserPs":[{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]}]},{"Name":"福建省莆田凯松化工厂","Phone":"1214124214","Post":"ee","Pwd":"","RoleId":"销售客户","UserId":"福建省莆田凯松化工厂","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]}]}]}
+<info>    [07-06 18:40:07 151] BaseInt.ExecInt                             L:217  <> T:5-Normal-True- ID:()
+	执行方法:0702
+<debug>   [07-06 18:40:15 586] UserPermissionInt.Get                       L:35   <I> T:5-Normal-True- ID:()
+	{"Token":"NjM3Mjk2NDY2NTYzODA0MDQwLWFkbWluMQ==","Page":{"Count":0,"Index":1,"Row":9,"Size":15},"Roleid":""}
+<debug>   [07-06 18:40:17 620] RoleSrvc.Get                                L:35   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Descript":null,"Isenable":null,"Roleid":null,"Rolename":null,"Userid":null}
+<debug>   [07-06 18:44:30 249] RolePermissionSrvc.Get                      L:28   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Roleid":"销售客户"}
+<debug>   [07-06 18:46:32 791] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"dema_sale"}
+<debug>   [07-06 18:47:27 390] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs1"}
+<debug>   [07-06 18:47:27 429] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs2"}
+<debug>   [07-06 18:47:27 434] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs3"}
+<debug>   [07-06 18:47:27 440] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs4"}
+<debug>   [07-06 18:47:27 446] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs5"}
+<debug>   [07-06 18:47:27 451] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"xs6"}
+<debug>   [07-06 18:47:27 456] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"福建港祥船务有限公司"}
+<debug>   [07-06 18:47:27 464] UserPermissionSrvc.Get                      L:31   <> T:5-Normal-True- ID:()
+	{"Createtime":null,"Id":0,"Ispermission":null,"Permissionid":null,"Userid":"福建省莆田凯松化工厂"}
+<tip>    [07-06 18:47:27 498] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0702 耗时:440346ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0702) 
+ 请求:{"Token":"NjM3Mjk2NDY2NTYzODA0MDQwLWFkbWluMQ==","Page":{"Count":0,"Index":1,"Row":9,"Size":15},"Roleid":""}
+	应答:{"Stat":"0","Page":{"Count":1,"Index":1,"Row":9,"Size":15},"RoleName":"销售客户","RoleNames":["销售客户","供应商","销售采购部","测试部门","管理员"],"RolePs":[{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"装车作业单","P3":["Add","Edit","Del"]}],"Users":[{"Name":"小谢","Phone":"1234567","Post":null,"Pwd":"","RoleId":"销售客户","UserId":"dema_sale","UserPs":[{"P2name":"客户管理","P3":[]},{"P2name":"供应商管理","P3":["Add","Edit"]}]},{"Name":"1234","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs1","UserPs":[{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]}]},{"Name":"124","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs2","UserPs":[{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]}]},{"Name":"125","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs3","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"126","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs4","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"127","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs5","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"128","Phone":null,"Post":null,"Pwd":"","RoleId":"销售客户","UserId":"xs6","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]}]},{"Name":"福建港祥船务有限公司","Phone":"123455","Post":"销售客户","Pwd":"","RoleId":"销售客户","UserId":"福建港祥船务有限公司","UserPs":[{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]}]},{"Name":"福建省莆田凯松化工厂","Phone":"1214124214","Post":"ee","Pwd":"","RoleId":"销售客户","UserId":"福建省莆田凯松化工厂","UserPs":[{"P2name":"装车作业单","P3":["Add","Edit","Del"]},{"P2name":"物流门信息管理","P3":["Add","Edit","Del"]},{"P2name":"客户管理","P3":["Add","Edit","Del"]},{"P2name":"运输公司管理","P3":["Add","Edit","Del"]},{"P2name":"牵引车管理","P3":["Add","Edit","Del"]},{"P2name":"供应商管理","P3":["Add","Edit","Del"]},{"P2name":"挂车管理","P3":["Add","Edit","Del"]},{"P2name":"司机管理","P3":["Add","Edit","Del"]},{"P2name":"押运员管理","P3":["Add","Edit","Del"]},{"P2name":"物料信息管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货预约管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"原辅料进厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂计划总单管理","P3":["Add","Edit","Del"]},{"P2name":"产品出厂预约管理","P3":["Add","Edit","Del"]},{"P2name":"产品退货单管理","P3":["Add","Edit","Del"]},{"P2name":"预约信息核实","P3":["Add","Edit","Del"]},{"P2name":"操作日志查询","P3":["Add","Edit","Del"]},{"P2name":"异常数据管理","P3":["Add","Edit","Del"]},{"P2name":"退货作业单","P3":["Add","Edit","Del"]},{"P2name":"预约后台管理","P3":["Add","Edit","Del"]},{"P2name":"发货区最大车辆数设置","P3":["Add","Edit","Del"]},{"P2name":"物流环节间隔时间设置","P3":["Add","Edit","Del"]},{"P2name":"过磅单数据汇总","P3":["Add","Edit","Del"]},{"P2name":"门禁通行记录汇总","P3":["Add","Edit","Del"]},{"P2name":"客户提货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"供应商送货数据汇总","P3":["Add","Edit","Del"]},{"P2name":"组织架构管理","P3":["Add","Edit","Del"]},{"P2name":"权限管理","P3":["Add","Edit","Del"]},{"P2name":"卸车作业单","P3":["Add","Edit","Del"]},{"P2name":"车辆安全检查","P3":["Add","Edit","Del"]},{"P2name":"装卸车区管理","P3":["Add","Edit","Del"]}]}]}

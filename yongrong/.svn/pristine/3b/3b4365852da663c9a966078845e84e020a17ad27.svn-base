@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Db;
+
+namespace Yongrong.Model.Int.BaseInfo
+{
+    public class BaseSupercargoAddReq : BaseInfoReq
+    {
+        public BaseSupercargo Supercargo { get; set; }
+
+        public override string Check()
+        {
+            if ("del".Equals(Op))
+            {
+                return Success;
+            }
+            if(null == Supercargo)
+            {
+                return "参数为空";
+            }
+            if(string.IsNullOrWhiteSpace(Supercargo.Name))
+            {
+                return "押运员姓名为空";
+            }
+            if(string.IsNullOrWhiteSpace(Supercargo.Transport))
+            {
+                return "隶属运输公司为空";
+            }
+            if(string.IsNullOrWhiteSpace(Supercargo.Cardid))
+            {
+                return "身份证号为空";
+            }
+            if(string.IsNullOrWhiteSpace(Supercargo.Driverid))
+            {
+                return "押运证件编号为空";
+            }
+            return "0";
+        }
+    }
+}

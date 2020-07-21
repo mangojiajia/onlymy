@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Db;
+
+namespace Yongrong.Model.Int.BaseInfo
+{
+    public class BaseTrailerAddReq : BaseInfoReq
+    {
+        public BaseTrailer Trailer { get; set; }
+
+        public override string Check()
+        {
+            if ("del".Equals(Op))
+            {
+                return Success;
+            }
+            if (null == Trailer)
+            {
+                return "参数为空";
+            }
+            if(string.IsNullOrWhiteSpace(Trailer.TrailerId))
+            {
+                return "挂车车牌为空";
+            }
+            if(string.IsNullOrWhiteSpace(Trailer.Transport))
+            {
+                return "运输公司为空";
+            }
+            return "0";
+        }
+    }
+}

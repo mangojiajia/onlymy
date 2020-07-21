@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Db;
+using Yongrong.Model.Int;
+using System.Linq;
+using BaseS.File.Log;
+using Yongrong.Db;
+
+namespace Yongrong.Srvc.BaseInfo
+{
+    public class BaseOrganizationSrvc : BaseSrvc
+    {
+        /// <summary>
+        /// 获取客户信息
+        /// </summary>
+        /// <param name="userid"></param>
+        /// <param name="baselist"></param>
+        /// <returns></returns>
+        public static bool Get(BaseOrganization query, PageBean page, out List<BaseOrganization> baselist)
+        {
+            baselist = new List<BaseOrganization>();
+
+            if (null == page)
+            {
+                page = new PageBean();
+            }
+
+            if (null == query)
+            {
+                query = new BaseOrganization();
+            }
+
+            query.Debug();
+
+            using (var db = DbContext)
+            {
+                page.Row = db.BaseOrganization.Count();
+
+                page.SumPageCount();
+
+                baselist.AddRange(
+                    db.BaseOrganization
+                    .OrderByDescending(a => a.Id)
+                    .Skip((page.Index - 1) * page.Size).Take(page.Size)
+                    );
+            }
+
+            return true;
+        }
+
+
+        /// <summary>
+        /// 添加和更新客户信息
+        /// </summary>
+        /// <param name="addupdobj"></param>
+        /// <param name="op"></param>
+        /// <returns></returns>
+        public static string AddOrUpdate(BaseOrganization addupdobj, string op)
+        {
+            if (null == addupdobj)
+            {
+                return ParamNull;
+            }
+
+            using (var db = DbContext)
+            {
+                switch (op)
+                {
+                    case ADD:
+                        addupdobj.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                        addupdobj.Id = GetSeq("SEQ_BASE_ORGANIZATION");
+
+                        db.BaseOrganization.Add(addupdobj);
+                        break;
+                    case UPD:
+                        var tmp = db.BaseOrganization.FirstOrDefault(a => a.Id == addupdobj.Id);
+
+                        if (null == tmp)
+                        {
+                            $"BaseOrganization无法找到{addupdobj.Id}".Warn();
+                            return UpdNoRecord;
+                        }
+
+                        addupdobj.Upd(tmp);
+
+                        db.BaseOrganization.Update(tmp);
+                        break;
+                    case DEL:
+                        var tmp1 = db.BaseOrganization.FirstOrDefault(a => a.Id == addupdobj.Id);
+
+                        if (null == tmp1)
+                        {
+                            $"BaseOrganization无法找到{addupdobj.Id}".Warn();
+                            return DelNoRecord;
+                        }
+
+                        db.BaseOrganization.Remove(tmp1);
+                        break;
+                    default:
+                        OpEmpty.Info();
+                        return OpEmpty;
+                }
+
+                db.SaveChanges();
+            }
+
+            return Success;
+        }
+    }
+}

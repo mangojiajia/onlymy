@@ -1,0 +1,90 @@
+using BaseS.Security;
+using BaseS.Serialization;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using Yongrong.Model.Int.BaseInfo;
+using Yongrong.Model.Int.IC;
+using Yongrong.Srvc.Weighbridge;
+
+namespace UnitTestProject1
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            ICQueryOrderReq req1 = new ICQueryOrderReq()
+            {
+                 Order = "",
+                  Tractor = ""
+            };
+
+            BJson.Obj2JsonT<ICQueryOrderReq>(req1, out string js);
+
+            DateTime dt = DateTime.UtcNow;
+            DateTime dt2 = DateTime.Now;
+
+            string s = string.Join(',', new System.Collections.Generic.List<string>());
+
+            BaseGoodsAddReq req = new BaseGoodsAddReq()
+            {
+                 Goods = new Yongrong.Model.Db.BaseGoods()
+                 {
+                      Goodsname = "1",
+                       Goodsid = "2",
+                 }
+            };
+
+            BJson.Obj2JsonT<BaseGoodsAddReq>(req, out string json);
+
+            Assert.IsNull(json);
+        }
+
+
+    }
+
+    [TestClass]
+    public class UnitTestWeigh
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            /*List<string> slist = new List<string>();
+
+            slist = null;
+
+            int num = slist?.Count ??0;
+
+            if (1 <= (slist?.Count ??0))
+            {
+                slist = null;
+            }
+            var dpext = new Yongrong.Model.Int.Weigh.DataParamExt()
+            {
+                Driver = "ÍõÂ½",
+                Endtime = DateTime.Now.AddMinutes(10).ToString("yyyy-MM-dd HH:mm:ss"),
+                Msg_id = DateTime.Now.Ticks.ToString(),
+                Order_id = "abc123123",
+                Order_type = "ËÍ»õ",
+                Starttime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+                Tractor_id = "ÃöB88888",
+                Trailer_id = "ÃöB77777",
+                Weigh_time = "1"
+            };
+
+            dpext.Sign = BMD5.ToMD5String(dpext.Order_id + dpext.Msg_id + dpext.Starttime, 32);
+
+            bool ret = WeighbridgeSrvc.BatchInsert(dpext);
+
+            Assert.IsTrue(ret);*/
+            string tel = "13606543784";
+            string pwd = tel.Substring(5, 6);
+            Console.WriteLine(pwd);
+
+            var sign = BMD5.ToMD5String("138567372611590147666000" + BMD5.ToMD5String("737261",32).ToUpper(), 32).ToUpper();
+            Console.WriteLine(sign);
+        }
+    }
+}

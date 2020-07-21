@@ -1,0 +1,558 @@
+﻿<notice>   [06-28 12:56:18 868] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 12:56:18 869] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 12:56:23 248] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 12:56:32 980] BaseInt.ExecInt                             L:213  <> T:9-Normal-True- ID:()
+	执行方法:0109upload
+<warn>   [06-28 12:56:37 877] BJson.JsonToObj                             L:426  <> T:9-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<warn>   [06-28 12:57:21 435] BJson.JsonToObj                             L:426  <> T:9-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<info>    [06-28 12:57:21 436] BaseDriverInt.Upload                        L:233  <> T:9-Normal-True- ID:()
+	0109upload总共数据为3条
+<debug>   [06-28 12:57:21 518] BDataTable.ToList_Old                       L:250  <> T:9-Normal-True- ID:()
+	<<<Return>>>:2 Spend:6.4199
+<info>    [06-28 12:57:21 518] BaseDriverInt.Upload                        L:245  <> T:9-Normal-True- ID:()
+	0109upload解析成对象集合共:3个
+<warn>   [06-28 12:57:21 518] BaseDriverInt.Upload                        L:261  <> T:9-Normal-True- ID:(手机号码为11位)
+	{"Cardid":"*331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"*3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"*15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
+<warn>   [06-28 12:57:21 518] BaseDriverInt.Upload                        L:261  <> T:9-Normal-True- ID:(手机号码为11位)
+	{"Cardid":"*331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"*3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"*15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
+<tip>    [06-28 12:57:24 437] HttpCtrl.RecvHttpReq                        L:107  <O> T:9-Normal-True- ID:(方法:0109upload 耗时:59291ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------402593215070197569216720
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
+��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018/3/24
+��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018.23.45
+
+----------------------------402593215070197569216720--
+
+	应答:{"Stat":"总共数据:2行 失败:2行  失败详情:\n第2行存在错误:手机号码为11位\r\n第3行存在错误:手机号码为11位\r\n"}
+<info>    [06-28 12:57:28 779] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<warn>   [06-28 12:57:33 453] BJson.JsonToObj                             L:426  <> T:4-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<info>    [06-28 12:58:50 764] BaseDriverInt.Upload                        L:233  <> T:4-Normal-True- ID:()
+	0109upload总共数据为3条
+<debug>   [06-28 12:58:50 766] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:2 Spend:0.1936
+<info>    [06-28 12:58:50 766] BaseDriverInt.Upload                        L:245  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:3个
+<warn>   [06-28 12:58:50 766] BaseDriverInt.Upload                        L:261  <> T:4-Normal-True- ID:(手机号码为11位)
+	{"Cardid":"*331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"*3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"*15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
+<warn>   [06-28 12:58:50 766] BaseDriverInt.Upload                        L:261  <> T:4-Normal-True- ID:(手机号码为11位)
+	{"Cardid":"*331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"*3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"*15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
+<tip>    [06-28 12:58:50 784] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:82005ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------665197960551837921282581
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
+��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018/3/24
+��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018.23.45
+
+----------------------------665197960551837921282581--
+
+	应答:{"Stat":"总共数据:2行 失败:2行  失败详情:\n第2行存在错误:手机号码为11位\r\n第3行存在错误:手机号码为11位\r\n"}
+<info>    [06-28 12:59:01 047] BaseInt.ExecInt                             L:213  <> T:13-Normal-True- ID:()
+	执行方法:0109upload
+<warn>   [06-28 12:59:04 186] BJson.JsonToObj                             L:426  <> T:13-Normal-True- ID:()
+	Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+<notice>   [06-28 13:03:31 462] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:03:31 462] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:03:33 997] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:03:35 517] BaseInt.ExecInt                             L:213  <> T:5-Normal-True- ID:()
+	执行方法:0109upload
+<notice>   [06-28 13:07:49 256] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:07:49 256] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:07:50 301] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:07:59 116] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:08:08 798] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:08:12 172] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:2.8876
+<notice>   [06-28 13:08:55 563] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:08:55 563] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:08:57 208] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:09:01 117] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:09:03 560] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:09:12 281] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:4.1248
+<notice>   [06-28 13:11:05 688] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:11:05 689] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:11:06 512] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:11:15 154] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:11:19 920] BaseDriverInt.Upload                        L:232  <> T:6-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:11:22 511] BDataTable.ToList_Old                       L:250  <> T:6-Normal-True- ID:()
+	<<<Return>>>:1 Spend:2.7993
+<info>    [06-28 13:11:23 207] BaseDriverInt.Upload                        L:244  <> T:6-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 13:12:11 404] BaseDriverInt.Upload                        L:260  <> T:6-Normal-True- ID:(隶属公司不能为空)
+	{"Cardid":"331000000050000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"3310000000000000000","Drivervalid":null,"Id":0,"Name":"时光1","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
+<warn>   [06-28 13:12:27 814] OracleHelper.ExecuteScalar                  L:150  <> T:6-Normal-True- ID:(sql)
+	select SEQ_USER_OPLOG.nextval from dual
+<warn>   [06-28 13:12:27 850] OracleHelper.ExecuteScalar                  L:151  <> T:6-Normal-True- ID:()
+	Connection request timed out    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Yongrong.Db.OracleHelper.ExecuteScalar(String sql) in D:\yongrong\Yongrong\Db\OracleHelper.cs:line 142
+<info>    [06-28 13:12:31 022] BaseInt.ExecInt                             L:213  <> T:10-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:12:31 793] BaseDriverInt.Upload                        L:232  <> T:10-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:12:31 795] BDataTable.ToList_Old                       L:250  <> T:10-Normal-True- ID:()
+	<<<Return>>>:1 Spend:1.211
+<info>    [06-28 13:12:31 797] BaseDriverInt.Upload                        L:244  <> T:10-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 13:12:44 079] HttpCtrl.RecvHttpReq                        L:101  <> T:6-Normal-True- ID:()
+	Connection request timed out 
+    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Yongrong.Db.BaseDb.SaveChanges(YrContext db, String Err) in D:\yongrong\Yongrong\Db\BaseDb.cs:line 53
+   at Yongrong.Srvc.Sys.UserOpLogSrvc.AddOrUpdate(UserOplog addupdobj, String op) in D:\yongrong\Yongrong\Srvc\Sys\UserOpLogSrvc.cs:line 112
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 227
+   at Yongrong.Ctrl.HttpCtrl.RecvHttpReq(BHttpBean http) in D:\yongrong\Yongrong\Ctrl\HttpCtrl.cs:line 97
+<tip>    [06-28 13:12:44 079] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:0109upload 耗时:88931ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------310847966349043706741440
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
+ʱ��1,��15268523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾
+
+----------------------------310847966349043706741440--
+
+	应答:
+<warn>   [06-28 13:12:47 672] BaseInt.ExecInt                             L:221  <O> T:10-Normal-True- ID:()
+	方法:0109upload Err:Connection request timed out 
+ StackTrace:   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Yongrong.Srvc.BaseInfo.BaseDriverSrvc.AddOrUpdate(BaseDriver addupdobj, String op) in D:\yongrong\Yongrong\Srvc\BaseInfo\BaseDriverSrvc.cs:line 93
+   at Yongrong.Int.BaseInfo.BaseDriverInt.Upload(Dictionary`2 reqmap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInfo\BaseDriverInt.cs:line 264
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 217 
+ InnerException:
+<warn>   [06-28 13:13:02 709] OracleHelper.ExecuteScalar                  L:150  <> T:10-Normal-True- ID:(sql)
+	select SEQ_USER_OPLOG.nextval from dual
+<warn>   [06-28 13:13:02 710] OracleHelper.ExecuteScalar                  L:151  <> T:10-Normal-True- ID:()
+	Connection request timed out    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Yongrong.Db.OracleHelper.ExecuteScalar(String sql) in D:\yongrong\Yongrong\Db\OracleHelper.cs:line 142
+<info>    [06-28 13:13:14 152] BaseInt.ExecInt                             L:213  <> T:12-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:13:17 711] BaseDriverInt.Upload                        L:232  <> T:12-Normal-True- ID:()
+	0109upload总共数据为2条
+<warn>   [06-28 13:13:21 133] HttpCtrl.RecvHttpReq                        L:101  <> T:10-Normal-True- ID:()
+	Connection request timed out 
+    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Yongrong.Db.BaseDb.SaveChanges(YrContext db, String Err) in D:\yongrong\Yongrong\Db\BaseDb.cs:line 53
+   at Yongrong.Srvc.Sys.UserOpLogSrvc.AddOrUpdate(UserOplog addupdobj, String op) in D:\yongrong\Yongrong\Srvc\Sys\UserOpLogSrvc.cs:line 112
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 227
+   at Yongrong.Ctrl.HttpCtrl.RecvHttpReq(BHttpBean http) in D:\yongrong\Yongrong\Ctrl\HttpCtrl.cs:line 97
+<debug>   [06-28 13:13:21 135] BDataTable.ToList_Old                       L:250  <> T:12-Normal-True- ID:()
+	<<<Return>>>:1 Spend:2.2475
+<tip>    [06-28 13:13:21 136] HttpCtrl.RecvHttpReq                        L:107  <O> T:10-Normal-True- ID:(方法:0109upload 耗时:50114ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------156113478079655516151873
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��1,��15268523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾
+
+----------------------------156113478079655516151873--
+
+	应答:
+<info>    [06-28 13:13:21 598] BaseDriverInt.Upload                        L:244  <> T:12-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<info>    [06-28 13:13:55 054] BaseInt.ExecInt                             L:213  <> T:10-Normal-True- ID:()
+	执行方法:0109upload
+<warn>   [06-28 13:13:57 561] BaseInt.ExecInt                             L:221  <O> T:12-Normal-True- ID:()
+	方法:0109upload Err:Connection request timed out 
+ StackTrace:   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Yongrong.Srvc.BaseInfo.BaseDriverSrvc.AddOrUpdate(BaseDriver addupdobj, String op) in D:\yongrong\Yongrong\Srvc\BaseInfo\BaseDriverSrvc.cs:line 93
+   at Yongrong.Int.BaseInfo.BaseDriverInt.Upload(Dictionary`2 reqmap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInfo\BaseDriverInt.cs:line 264
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 217 
+ InnerException:
+<info>    [06-28 13:13:57 561] BaseDriverInt.Upload                        L:232  <> T:10-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:13:59 127] BDataTable.ToList_Old                       L:250  <> T:10-Normal-True- ID:()
+	<<<Return>>>:1 Spend:0.4297
+<info>    [06-28 13:13:59 377] BaseDriverInt.Upload                        L:244  <> T:10-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 13:14:12 912] OracleHelper.ExecuteScalar                  L:150  <> T:12-Normal-True- ID:(sql)
+	select SEQ_USER_OPLOG.nextval from dual
+<warn>   [06-28 13:14:12 913] OracleHelper.ExecuteScalar                  L:151  <> T:12-Normal-True- ID:()
+	Connection request timed out    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Yongrong.Db.OracleHelper.ExecuteScalar(String sql) in D:\yongrong\Yongrong\Db\OracleHelper.cs:line 142
+<warn>   [06-28 13:14:26 619] BaseInt.ExecInt                             L:221  <O> T:10-Normal-True- ID:()
+	方法:0109upload Err:Connection request timed out 
+ StackTrace:   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Yongrong.Srvc.BaseInfo.BaseDriverSrvc.AddOrUpdate(BaseDriver addupdobj, String op) in D:\yongrong\Yongrong\Srvc\BaseInfo\BaseDriverSrvc.cs:line 93
+   at Yongrong.Int.BaseInfo.BaseDriverInt.Upload(Dictionary`2 reqmap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInfo\BaseDriverInt.cs:line 264
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 217 
+ InnerException:
+<warn>   [06-28 13:14:27 951] HttpCtrl.RecvHttpReq                        L:101  <> T:12-Normal-True- ID:()
+	Connection request timed out 
+    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Yongrong.Db.BaseDb.SaveChanges(YrContext db, String Err) in D:\yongrong\Yongrong\Db\BaseDb.cs:line 53
+   at Yongrong.Srvc.Sys.UserOpLogSrvc.AddOrUpdate(UserOplog addupdobj, String op) in D:\yongrong\Yongrong\Srvc\Sys\UserOpLogSrvc.cs:line 112
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 227
+   at Yongrong.Ctrl.HttpCtrl.RecvHttpReq(BHttpBean http) in D:\yongrong\Yongrong\Ctrl\HttpCtrl.cs:line 97
+<tip>    [06-28 13:14:27 952] HttpCtrl.RecvHttpReq                        L:107  <O> T:12-Normal-True- ID:(方法:0109upload 耗时:73799ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------455238753488811928798133
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��2,��15298523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾
+
+----------------------------455238753488811928798133--
+
+	应答:
+<warn>   [06-28 13:14:42 920] OracleHelper.ExecuteScalar                  L:150  <> T:10-Normal-True- ID:(sql)
+	select SEQ_USER_OPLOG.nextval from dual
+<warn>   [06-28 13:14:42 921] OracleHelper.ExecuteScalar                  L:151  <> T:10-Normal-True- ID:()
+	Connection request timed out    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Yongrong.Db.OracleHelper.ExecuteScalar(String sql) in D:\yongrong\Yongrong\Db\OracleHelper.cs:line 142
+<notice>   [06-28 13:15:15 107] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:15:15 108] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:15:16 215] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:15:19 509] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:15:19 538] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:15:19 564] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:2.7207
+<info>    [06-28 13:15:19 564] BaseDriverInt.Upload                        L:244  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 13:15:37 244] BaseInt.ExecInt                             L:221  <O> T:4-Normal-True- ID:()
+	方法:0109upload Err:Connection request timed out 
+ StackTrace:   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Yongrong.Srvc.BaseInfo.BaseDriverSrvc.AddOrUpdate(BaseDriver addupdobj, String op) in D:\yongrong\Yongrong\Srvc\BaseInfo\BaseDriverSrvc.cs:line 93
+   at Yongrong.Int.BaseInfo.BaseDriverInt.Upload(Dictionary`2 reqmap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInfo\BaseDriverInt.cs:line 264
+   at Yongrong.Int.BaseInt.ExecInt(String cmd, Dictionary`2 urlMap, Byte[] reqbytes) in D:\yongrong\Yongrong\Int\BaseInt.cs:line 217 
+ InnerException:
+<warn>   [06-28 13:15:52 290] OracleHelper.ExecuteScalar                  L:150  <> T:4-Normal-True- ID:(sql)
+	select SEQ_USER_OPLOG.nextval from dual
+<warn>   [06-28 13:15:52 293] OracleHelper.ExecuteScalar                  L:151  <> T:4-Normal-True- ID:()
+	Connection request timed out    at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Yongrong.Db.OracleHelper.ExecuteScalar(String sql) in D:\yongrong\Yongrong\Db\OracleHelper.cs:line 142
+<notice>   [06-28 13:16:11 279] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:16:11 280] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:16:12 567] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:16:21 548] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:16:21 596] BaseDriverInt.Upload                        L:232  <> T:6-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:16:21 624] BDataTable.ToList_Old                       L:250  <> T:6-Normal-True- ID:()
+	<<<Return>>>:1 Spend:4.8276
+<info>    [06-28 13:16:21 624] BaseDriverInt.Upload                        L:244  <> T:6-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<notice>   [06-28 13:22:03 855] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:22:03 855] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:22:07 551] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:22:28 991] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:22:29 028] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:22:29 067] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:2.8582
+<info>    [06-28 13:22:29 067] BaseDriverInt.Upload                        L:244  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<notice>   [06-28 13:33:47 276] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 13:33:47 276] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 13:33:49 294] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 13:33:58 726] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:33:58 774] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:33:58 820] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:3.0028
+<info>    [06-28 13:33:58 820] BaseDriverInt.Upload                        L:244  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<tip>    [06-28 13:34:22 740] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:24020ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------874828162797904019397918
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��3,��15298523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾
+
+----------------------------874828162797904019397918--
+
+	应答:{"Stat":"总共数据:1行 失败:0行 "}
+<info>    [06-28 13:35:26 067] BaseInt.ExecInt                             L:213  <> T:8-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 13:35:26 067] BaseDriverInt.Upload                        L:232  <> T:8-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 13:35:26 067] BDataTable.ToList_Old                       L:250  <> T:8-Normal-True- ID:()
+	<<<Return>>>:1 Spend:0.1257
+<info>    [06-28 13:35:26 067] BaseDriverInt.Upload                        L:244  <> T:8-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 13:36:38 175] BaseDriverSrvc.AddOrUpdate                  L:105  <> T:8-Normal-True- ID:()
+	BaseDriver Tel:15298523245,Transport:时光公司 已存在
+<notice>   [06-28 14:14:03 131] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 14:14:03 131] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 14:14:05 335] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 14:14:08 494] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 14:14:08 545] BaseDriverInt.Upload                        L:232  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 14:14:08 607] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:4.7962
+<info>    [06-28 14:14:08 607] BaseDriverInt.Upload                        L:244  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<warn>   [06-28 14:14:16 174] BaseDriverSrvc.AddOrUpdate                  L:105  <> T:4-Normal-True- ID:()
+	BaseDriver Tel:15298523245,Transport:时光公司 已存在
+<warn>   [06-28 14:14:39 235] BaseDriverInt.Upload                        L:287  <> T:4-Normal-True- ID:(记录已存在,无法新增)
+	{"Cardid":"331000000050000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"3310000000000000000","Drivervalid":null,"Id":0,"Name":"时光3","Otherid":null,"Othervalid":null,"Tel":"15298523245","TractorId":"2132","TrailerId":"23234","Transport":"时光公司","Whiteflag":null}
+<tip>    [06-28 14:14:39 388] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:30899ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------620931201034475483878864
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��3,��15298523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾
+
+----------------------------620931201034475483878864--
+
+	应答:{"Stat":"总共数据:1行 失败:1行  失败详情:\n第2行存在错误:记录已存在,无法新增\r\n"}
+<info>    [06-28 14:15:10 327] BaseInt.ExecInt                             L:213  <> T:5-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 14:15:10 329] BaseDriverInt.Upload                        L:232  <> T:5-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 14:15:10 330] BDataTable.ToList_Old                       L:250  <> T:5-Normal-True- ID:()
+	<<<Return>>>:1 Spend:0.3745
+<info>    [06-28 14:15:10 330] BaseDriverInt.Upload                        L:244  <> T:5-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<tip>    [06-28 14:16:01 246] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0109upload 耗时:50918ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------163821920459418992822803
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��5,��15291523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾1
+
+----------------------------163821920459418992822803--
+
+	应答:{"Stat":"总共数据:1行 失败:0行 "}
+<notice>   [06-28 14:23:07 330] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 14:23:07 331] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 14:23:09 253] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<notice>   [06-28 14:34:53 819] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 14:34:53 819] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 14:34:56 738] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<notice>   [06-28 15:33:00 027] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
+	系统初始化开始
+<warn>   [06-28 15:33:00 027] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
+	初始化完毕,平台接口准备开启!
+<warn>   [06-28 15:33:02 072] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
+	Http服务 IPAddress.Any Port:20007 启动
+<info>    [06-28 15:33:37 845] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 15:33:37 893] BaseDriverInt.Upload                        L:234  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 15:33:37 939] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:6.2526
+<info>    [06-28 15:33:37 939] BaseDriverInt.Upload                        L:246  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<tip>    [06-28 15:34:09 581] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:31746ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------855366826424276522938500
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��10,��15391523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾2
+
+----------------------------855366826424276522938500--
+
+	应答:{"Stat":"总共数据:1行 失败:0行 "}
+<info>    [06-28 15:37:01 497] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
+	执行方法:0109upload
+<info>    [06-28 15:37:01 497] BaseDriverInt.Upload                        L:234  <> T:4-Normal-True- ID:()
+	0109upload总共数据为2条
+<debug>   [06-28 15:37:01 498] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
+	<<<Return>>>:1 Spend:0.1718
+<info>    [06-28 15:37:01 498] BaseDriverInt.Upload                        L:246  <> T:4-Normal-True- ID:()
+	0109upload解析成对象集合共:2个
+<tip>    [06-28 15:41:03 375] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:241482ms <<<<<<<)
+	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
+ 请求:----------------------------949314848800531065863818
+Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
+Content-Type: text/csv
+
+����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,��������
+ʱ��15,��15691523245,��331000000050000000,��3310000000000000000,23213,2132,23234,ʱ�⹫˾2
+
+----------------------------949314848800531065863818--
+
+	应答:{"Stat":"总共数据:1行 失败:0行 "}

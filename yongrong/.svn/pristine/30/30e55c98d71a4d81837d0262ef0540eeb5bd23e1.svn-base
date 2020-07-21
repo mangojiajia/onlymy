@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Db;
+
+namespace Yongrong.Model.Int.BaseInfo
+{
+    public class AuthorityManagementDetailAddReq: BaseInfoReq
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// 
+        public AuthorityManagementDetail AuthorityManagementDetail { get; set; }
+
+        /// <summary>
+        /// 返回0表示成功
+        /// </summary>
+        /// <returns></returns>
+        public override string Check()
+        {
+            return "0";
+        }
+    }
+}

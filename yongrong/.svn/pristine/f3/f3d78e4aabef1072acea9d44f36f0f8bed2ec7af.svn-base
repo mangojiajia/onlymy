@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Yongrong.Model.Db
+{
+    public partial class BaseDriver
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        /// <summary>
+        /// 身份证号
+        /// </summary>
+        public string Cardid { get; set; }
+        public string Driverid { get; set; }
+        public string Driverdegree { get; set; }
+        public string Drivervalid { get; set; }
+        public string TractorId { get; set; }
+        public string TrailerId { get; set; }
+        public string Transport { get; set; }
+        public string Code { get; set; }
+        public string Createtime { get; set; }
+        public string Otherid { get; set; }
+        public string Othervalid { get; set; }
+        public string Tel { get; set; }
+        public string Whiteflag { get; set; }
+
+
+
+        public void Upd(BaseDriver old)
+        {
+            old.Name = this.Name;
+            old.Cardid = this.Cardid;
+            old.Driverid = this.Driverid;
+            old.Driverdegree = this.Driverdegree;
+            old.Drivervalid = this.Drivervalid;
+            old.TractorId = this.TractorId;
+            old.TrailerId = this.TrailerId;
+            old.Transport = this.Transport;
+            old.Code = this.Code;
+            old.Otherid = this.Otherid;
+            old.Othervalid = this.Othervalid;
+            old.Tel = this.Tel;
+            old.Whiteflag = this.Whiteflag;
+        }
+    }
+}

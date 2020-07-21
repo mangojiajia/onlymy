@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Db;
+using Yongrong.Model.Int.BaseInfo;
+
+namespace Yongrong.Model.Int.Sys
+{
+   public class AbnormalAddReq : BaseInfoReq
+    {
+
+        public Abnormal Abnormal { get; set; }
+
+        public override string Check()
+        {
+            return Success;
+        }
+
+    }
+}

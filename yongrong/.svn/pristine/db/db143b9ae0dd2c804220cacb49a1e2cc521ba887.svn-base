@@ -1,0 +1,264 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Yongrong.Model.Int.BaseInfo;
+using Yongrong.Srvc.BaseInfo;
+using BaseS.Serialization;
+using BaseS.String;
+using Yongrong.Srvc.Users;
+using BaseS.File.Log;
+using Yongrong.Model.Db;
+using Yongrong.Model.Int.Sum;
+using BaseS.Collection;
+using System.Data;
+using BaseS.File;
+using BaseS.Data;
+using BaseS.File;
+
+namespace Yongrong.Int.BaseInfo
+{
+    class OrderGoodsInt : BaseInt
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] Get(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            OrderGoodsRsp rsp = new OrderGoodsRsp();
+
+            reqbytes.Json2ObjT<OrderGoodsReq>(out OrderGoodsReq req);
+            //进日志
+            req.Debug(string.Empty, Enter);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            //req.Query.Issendback = "1";
+            //req.Query.Istoexit = "1";
+
+            reqmap.TryGetValue("cmd", out var cmd);
+
+            if (Sys.CustomRole.Contains(user.Roleids))
+            {
+                req.Query.Company = user.Userid;
+            }
+
+            OrderGoodsSrvc.Get(
+                req.Query,
+                req.Page,
+                out var tmp);
+
+            if (null == req.Page)
+            {
+                rsp.Page = new Model.Int.PageBean();
+            }
+            else
+            {
+                req.Page.CopyPage(rsp.Page);
+            }
+
+            rsp.Stat = Success;
+            rsp.List = tmp;
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"查询{GetCmdName(cmd)}");
+
+            return rsp.ToBytes();
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] AddUpd(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            OrderGoodsAddRsp rsp = new OrderGoodsAddRsp();
+
+            reqbytes.Json2ObjT<OrderGoodsAddReq>(out OrderGoodsAddReq req);
+            //进日志
+            req.Debug(string.Empty, Enter);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            if(ADD.Equals(req.Op))
+            {
+                rsp.Stat = OrderGoodsSrvc.SubBill(req.OrderGoods);
+            }
+            else
+            {
+                rsp.Stat = OrderGoodsSrvc.AddOrUpdate(req.OrderGoods, req.Op, user.Roleids);
+            }
+            
+
+            reqmap.TryGetValue("cmd", out var cmd);
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"查询{GetOPName(req.Op)}{GetCmdName(cmd)}");
+
+            return rsp.ToBytes();
+        }
+
+        /// <summary>
+        /// 根据id，获取要打印的预约信息
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] QueryOrder(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            OrderGoodsRsp rsp = new OrderGoodsRsp();
+
+            reqbytes.Json2ObjT<OrderGoodsReq>(out OrderGoodsReq req);
+            //进日志
+            req.Debug(string.Empty, Enter);
+
+            if (null == req)
+            {
+                rsp.Stat = JsonErr;
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!Success.Equals(req.Check()))
+            {
+                rsp.Stat = req.Check();
+                reqmap.TryAdd(OP_Content, rsp.Stat);
+                reqmap.TryAdd(OP_Detail, reqbytes.B2String());
+                return rsp.ToBytes();
+            }
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = req.Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + req.Token);
+
+                return rsp.ToBytes();
+            }
+
+            OrderGoodsSrvc.GetOneById(req.Query, out OrderGoods order);
+            if(null == order)
+            {
+                rsp.Stat = "预约信息不存在";
+                return rsp.ToBytes();
+            }
+
+            rsp.order = order;
+
+            rsp.Stat = Success;
+            return rsp.ToBytes();
+        }
+
+        /// <summary>
+        /// 导出
+        /// </summary>
+        /// <param name="reqmap"></param>
+        /// <param name="reqbytes"></param>
+        /// <returns></returns>
+        public static byte[] Output(Dictionary<string, string> reqmap, byte[] reqbytes)
+        {
+            OutputRsp rsp = new OutputRsp() { Stat = Success };
+
+            reqbytes.Json2ObjT<OrderGoodsReq>(out OrderGoodsReq req);
+
+            string Token = reqmap.GetDicStr("Token");
+
+            if (null == req)
+            {
+                req = new OrderGoodsReq();
+            }
+
+            if (null == req.Query)
+            {
+                req.Query = new OrderGoods();
+            }
+
+            req.Page = new Model.Int.PageBean() { Index = 1, Size = 10000 };
+            req.Query.Starttime = reqmap.GetDicStr("Starttime", req.Query.Starttime);
+            req.Query.Endtime = reqmap.GetDicStr("Endtime", req.Query.Endtime);
+            req.Query.Driver = reqmap.GetDicStr("Driver", req.Query.Driver);
+            req.Query.Goodsname = reqmap.GetDicStr("Goodsname", req.Query.Goodsname);
+            req.Query.Tractorid = reqmap.GetDicStr("Tractorid", req.Query.Tractorid);
+
+            if (!UserSrvc.GetOne(new Model.Db.User() { Token = Token }, out var user))
+            {
+                rsp.Stat = "用户不存在";
+
+                reqmap.TryAdd(OP_Content, "用户不存在");
+                reqmap.TryAdd(OP_Detail, "Token:" + Token);
+
+                return rsp.ToBytes();
+            }
+
+            reqmap.TryAdd(OP_User, user?.Userid);
+            reqmap.TryAdd(OP_Content, $"导出地磅记录");
+
+            OrderGoodsSrvc.Get(req.Query, req.Page, out var list);
+
+            if (null != list && list.Count > 0)
+            {
+                DataTable dt = list.ToDataTable();
+                BCsv.DataTable2CsvString(dt, out string dataString);
+
+                return Encoding.UTF8.GetBytes(dataString);
+
+            }
+            return rsp.ToBytes();
+        }
+
+    }
+}

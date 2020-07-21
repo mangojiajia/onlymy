@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yongrong", "Yongrong\Yongrong.csproj", "{668D718D-CE24-49D2-991D-3C97DB6516EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{4367EAE6-6220-483C-B170-5C9B086B4EEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseS", "Base\BaseS\BaseS.csproj", "{1CB6D32C-8562-45FF-9D94-CD4760F8D566}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BAspNetCore", "Base\BAspNetCore\BAspNetCore.csproj", "{CCDC2B25-8D77-4206-AD4D-221012879AB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{7931ED61-56C0-4068-BC77-D99ACF255A3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICcard", "ICcard\ICcard.csproj", "{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IC", "IC", "{598667FE-D2B5-4BED-9B21-22483B2BC64E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICcard32", "ICcard32\ICcard32.csproj", "{90034CF6-D777-4428-9903-1BD50F169395}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Debug|x86.Build.0 = Debug|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{668D718D-CE24-49D2-991D-3C97DB6516EC}.Release|x86.Build.0 = Release|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Debug|x86.Build.0 = Debug|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Release|x86.ActiveCfg = Release|Any CPU
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566}.Release|x86.Build.0 = Release|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6}.Release|x86.Build.0 = Release|Any CPU
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Debug|x86.ActiveCfg = Debug|x86
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Debug|x86.Build.0 = Debug|x86
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Release|x86.ActiveCfg = Release|x86
+		{7931ED61-56C0-4068-BC77-D99ACF255A3A}.Release|x86.Build.0 = Release|x86
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Debug|x86.Build.0 = Debug|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Release|x86.ActiveCfg = Release|Any CPU
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B}.Release|x86.Build.0 = Release|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Debug|x86.Build.0 = Debug|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Release|x86.ActiveCfg = Release|Any CPU
+		{90034CF6-D777-4428-9903-1BD50F169395}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CB6D32C-8562-45FF-9D94-CD4760F8D566} = {4367EAE6-6220-483C-B170-5C9B086B4EEC}
+		{CCDC2B25-8D77-4206-AD4D-221012879AB6} = {4367EAE6-6220-483C-B170-5C9B086B4EEC}
+		{A1726E4F-4B03-4546-A976-FC26EA0E2D5B} = {598667FE-D2B5-4BED-9B21-22483B2BC64E}
+		{90034CF6-D777-4428-9903-1BD50F169395} = {598667FE-D2B5-4BED-9B21-22483B2BC64E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {180DBEC7-2E1E-4D0E-92C7-EC031872232C}
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
