@@ -1,711 +1,0 @@
-﻿<notice>   [06-24 09:18:59 840] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:18:59 841] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:19:02 534] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 09:19:31 469] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0107upload
-<info>    [06-24 09:20:08 720] BaseTractorInt.Upload                       L:186  <> T:4-Normal-True- ID:()
-	0107upload总共数据为2条
-<debug>   [06-24 09:20:20 521] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:1 Spend:11753.4104
-<info>    [06-24 09:20:20 522] BaseTractorInt.Upload                       L:197  <> T:4-Normal-True- ID:()
-	0107upload解析成对象集合共:2个
-<warn>   [06-24 09:20:31 084] BaseTractorSrvc.AddOrUpdate                 L:91   <> T:4-Normal-True- ID:()
-	BaseTractor TractorId:12345678 已存在
-<tip>    [06-24 09:20:31 311] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0107upload 耗时:59848ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0107upload) 
- 请求:----------------------------761734475300615393863219
-Content-Disposition: form-data; name=""; filename="牵引车管理_销售采购部门提供.csv"; filename*="UTF-8''%E7%89%B5%E5%BC%95%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-ǣ��������,���䳵���,�������乫˾
-12345678,12312321,�ܼ��ſڰ��Ƿ�
-
-----------------------------761734475300615393863219--
-
-	应答:{"Stat":"0"}
-<notice>   [06-24 09:34:55 970] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:34:55 971] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:34:58 259] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 09:35:12 427] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0107upload
-<info>    [06-24 09:35:12 461] BaseTractorInt.Upload                       L:186  <> T:4-Normal-True- ID:()
-	0107upload总共数据为5条
-<debug>   [06-24 09:35:26 258] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:4 Spend:13768.1833
-<info>    [06-24 09:35:26 258] BaseTractorInt.Upload                       L:197  <> T:4-Normal-True- ID:()
-	0107upload解析成对象集合共:5个
-<warn>   [06-24 09:36:50 989] BaseTractorSrvc.AddOrUpdate                 L:91   <> T:4-Normal-True- ID:()
-	BaseTractor TractorId:12345678 已存在
-<notice>   [06-24 09:43:46 671] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:43:46 677] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:43:48 473] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 09:43:58 865] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
-	执行方法:0107upload
-<info>    [06-24 09:43:58 914] BaseTractorInt.Upload                       L:186  <> T:6-Normal-True- ID:()
-	0107upload总共数据为5条
-<debug>   [06-24 09:43:58 959] BDataTable.ToList_Old                       L:250  <> T:6-Normal-True- ID:()
-	<<<Return>>>:4 Spend:3.8836
-<info>    [06-24 09:43:58 959] BaseTractorInt.Upload                       L:197  <> T:6-Normal-True- ID:()
-	0107upload解析成对象集合共:5个
-<warn>   [06-24 09:43:58 960] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<warn>   [06-24 09:43:58 960] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(隶属公司不能为空)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"123456788","Transport":"","Validdate":null}
-<warn>   [06-24 09:44:01 576] BaseTractorSrvc.AddOrUpdate                 L:91   <> T:6-Normal-True- ID:()
-	BaseTractor TractorId:12345678 已存在
-<warn>   [06-24 09:44:01 579] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<tip>    [06-24 09:44:13 436] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:0107upload 耗时:14575ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0107upload) 
- 请求:----------------------------788813624589472426020383
-Content-Disposition: form-data; name=""; filename="牵引车管理_销售采购部门提供.csv"; filename*="UTF-8''%E7%89%B5%E5%BC%95%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-ǣ��������,���䳵���,�������乫˾
-,12312321,�ܼ��ſڰ��Ƿ�
-123456788,12312321,
-12345678,12312321,�ܼ��ſڰ��Ƿ�
-,12312321,�ܼ��ſڰ��Ƿ�
-
-----------------------------788813624589472426020383--
-
-	应答:{"Stat":"上传错误3"}
-<notice>   [06-24 09:50:37 002] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:50:37 002] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:50:39 447] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 09:50:44 487] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
-	执行方法:0107upload
-<info>    [06-24 09:50:44 534] BaseTractorInt.Upload                       L:186  <> T:6-Normal-True- ID:()
-	0107upload总共数据为5条
-<debug>   [06-24 09:50:44 626] BDataTable.ToList_Old                       L:250  <> T:6-Normal-True- ID:()
-	<<<Return>>>:4 Spend:4.0269
-<info>    [06-24 09:50:44 626] BaseTractorInt.Upload                       L:197  <> T:6-Normal-True- ID:()
-	0107upload解析成对象集合共:5个
-<warn>   [06-24 09:50:44 627] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<warn>   [06-24 09:50:44 627] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(隶属公司不能为空)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"123456788","Transport":"","Validdate":null}
-<warn>   [06-24 09:50:47 612] BaseTractorSrvc.AddOrUpdate                 L:91   <> T:6-Normal-True- ID:()
-	BaseTractor TractorId:12345678 已存在
-<warn>   [06-24 09:50:47 614] BaseTractorInt.Upload                       L:208  <> T:6-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<tip>    [06-24 09:50:48 087] HttpCtrl.RecvHttpReq                        L:107  <O> T:6-Normal-True- ID:(方法:0107upload 耗时:3608ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0107upload) 
- 请求:----------------------------149364504288447035079547
-Content-Disposition: form-data; name=""; filename="牵引车管理_销售采购部门提供.csv"; filename*="UTF-8''%E7%89%B5%E5%BC%95%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-ǣ��������,���䳵���,�������乫˾
-,12312321,�ܼ��ſڰ��Ƿ�
-123456788,12312321,
-12345678,12312321,�ܼ��ſڰ��Ƿ�
-,12312321,�ܼ��ſڰ��Ƿ�
-
-----------------------------149364504288447035079547--
-
-	应答:{"Stat":"成功上传2条,上传错误3条"}
-<notice>   [06-24 09:53:31 208] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:53:31 208] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:53:33 100] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 09:53:47 677] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0107upload
-<info>    [06-24 09:53:47 729] BaseTractorInt.Upload                       L:187  <> T:4-Normal-True- ID:()
-	0107upload总共数据为5条
-<debug>   [06-24 09:53:47 766] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:4 Spend:2.1326
-<info>    [06-24 09:53:47 766] BaseTractorInt.Upload                       L:198  <> T:4-Normal-True- ID:()
-	0107upload解析成对象集合共:5个
-<warn>   [06-24 09:53:47 766] BaseTractorInt.Upload                       L:218  <> T:4-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<warn>   [06-24 09:53:47 766] BaseTractorInt.Upload                       L:218  <> T:4-Normal-True- ID:(隶属公司不能为空)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"123456788","Transport":"","Validdate":null}
-<warn>   [06-24 09:53:50 864] BaseTractorSrvc.AddOrUpdate                 L:91   <> T:4-Normal-True- ID:()
-	BaseTractor TractorId:12345678 已存在
-<warn>   [06-24 09:53:50 867] BaseTractorInt.Upload                       L:230  <> T:4-Normal-True- ID:(0)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"12345678","Transport":"管家婆口岸是非","Validdate":null}
-<warn>   [06-24 09:53:50 867] BaseTractorInt.Upload                       L:218  <> T:4-Normal-True- ID:(牵引车车牌错误)
-	{"Carid":"12312321","Createtime":null,"Degree":null,"Id":0,"Region":null,"TractorId":"","Transport":"管家婆口岸是非","Validdate":null}
-<tip>    [06-24 09:53:51 117] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0107upload 耗时:3445ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0107upload) 
- 请求:----------------------------066178176639209011898855
-Content-Disposition: form-data; name=""; filename="牵引车管理_销售采购部门提供.csv"; filename*="UTF-8''%E7%89%B5%E5%BC%95%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-ǣ��������,���䳵���,�������乫˾
-,12312321,�ܼ��ſڰ��Ƿ�
-123456788,12312321,
-12345678,12312321,�ܼ��ſڰ��Ƿ�
-,12312321,�ܼ��ſڰ��Ƿ�
-
-----------------------------066178176639209011898855--
-
-	应答:{"Stat":"有效数据:4行 失败:4行 失败详情:\n第2行存在错误:牵引车车牌错误\r\n第3行存在错误:隶属公司不能为空\r\n第4行存在错误:记录已存在,无法新增\r\n第5行存在错误:牵引车车牌错误\r\n"}
-<notice>   [06-24 09:59:44 803] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 09:59:44 804] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 09:59:47 423] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<debug>   [06-24 10:00:02 435] TimerCtrl.AllTask                           L:117  <> T:8-Normal-True- ID:()
-	小时任务开始
-<debug>   [06-24 10:00:02 436] TimerCtrl.AllTask                           L:119  <> T:8-Normal-True- ID:()
-	小时任务结束
-<info>    [06-24 10:00:17 695] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 10:00:17 720] BaseTrailerInt.Upload                       L:186  <> T:4-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 10:00:17 748] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:6 Spend:6.2573
-<info>    [06-24 10:00:17 748] BaseTrailerInt.Upload                       L:199  <> T:4-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<warn>   [06-24 10:00:26 510] BaseTrailerInt.Upload                       L:215  <> T:4-Normal-True- ID:(挂车号牌错误)
-	{"Carflag":null,"Carid":"C2005","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<tip>    [06-24 10:00:26 587] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0108upload 耗时:8896ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0108upload) 
- 请求:----------------------------279002523409234404420756
-Content-Disposition: form-data; name=""; filename="挂车管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8C%82%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-�ҳ�����,�ҳ�֤�����,��������(��),�������乫˾
-��C2001��,C2001,50,"	�������鴬�����޹�˾"
-��C2002��,C2002,50,"	�������鴬�����޹�˾"
-��C2003��,C2003,50,"	�������鴬�����޹�˾"
-��C2004��,C2004,50,"	�������鴬�����޹�˾"
-,C2005,50,"	�������鴬�����޹�˾"
-��C2006��,C2006,50,"	�������鴬�����޹�˾"
-
-----------------------------279002523409234404420756--
-
-	应答:{"Stat":"有效数据:6行 失败:1行 失败详情:\n第6行存在错误:挂车号牌错误\r\n"}
-<info>    [06-24 10:01:59 143] BaseInt.ExecInt                             L:213  <> T:8-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 10:01:59 144] BaseDriverInt.Upload                        L:224  <> T:8-Normal-True- ID:()
-	0109upload总共数据为3条
-<debug>   [06-24 10:01:59 146] BDataTable.ToList_Old                       L:250  <> T:8-Normal-True- ID:()
-	<<<Return>>>:2 Spend:1.6376
-<info>    [06-24 10:01:59 146] BaseDriverInt.Upload                        L:236  <> T:8-Normal-True- ID:()
-	0109upload解析成对象集合共:3个
-<warn>   [06-24 10:01:59 147] BaseDriverInt.Upload                        L:252  <> T:8-Normal-True- ID:(身份证为18位)
-	{"Cardid":"3.30683E+17","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"1232","Drivervalid":null,"Id":0,"Name":"的发送到发","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"2323","Transport":"2323","Whiteflag":null}
-<warn>   [06-24 10:01:59 147] BaseDriverInt.Upload                        L:252  <> T:8-Normal-True- ID:(身份证为18位)
-	{"Cardid":"3.30683E+17","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"1232","Drivervalid":null,"Id":0,"Name":"的发送到发","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"2323","Transport":"","Whiteflag":null}
-<tip>    [06-24 10:01:59 156] HttpCtrl.RecvHttpReq                        L:107  <O> T:8-Normal-True- ID:(方法:0109upload 耗时:13ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------117522054169499615409218
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-�ķ��͵���,15268523245,3.30683E+17,1232,23213,2132,2323,2323
-�ķ��͵���,15268523245,3.30683E+17,1232,23213,2132,2323,
-
-----------------------------117522054169499615409218--
-
-	应答:{"Stat":"有效数据:2行 失败:2行 失败详情:\n第2行存在错误:身份证为18位\r\n第3行存在错误:身份证为18位\r\n"}
-<info>    [06-24 10:02:32 734] BaseInt.ExecInt                             L:213  <> T:11-Normal-True- ID:()
-	执行方法:0110upload
-<info>    [06-24 10:02:32 737] BaseSupercargoInt.Upload                    L:186  <> T:11-Normal-True- ID:()
-	0110upload总共数据为2条
-<debug>   [06-24 10:02:32 743] BDataTable.ToList_Old                       L:250  <> T:11-Normal-True- ID:()
-	<<<Return>>>:1 Spend:5.534
-<info>    [06-24 10:02:32 743] BaseSupercargoInt.Upload                    L:197  <> T:11-Normal-True- ID:()
-	0110upload解析成对象集合共:2个
-<warn>   [06-24 10:02:32 744] BaseSupercargoInt.Upload                    L:213  <> T:11-Normal-True- ID:(身份证为18位)
-	{"Cardid":"3.30683E+17","Code":null,"Createtime":null,"Driver":"发士大夫的","Driverid":"地方","Drivervalid":null,"Id":0,"Name":"的发送到发","Otherid":null,"Othervalid":null,"TractorId":null,"TrailerId":null,"Transport":"","Whiteflag":null}
-<tip>    [06-24 10:02:32 756] HttpCtrl.RecvHttpReq                        L:107  <O> T:11-Normal-True- ID:(方法:0110upload 耗时:22ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0110upload) 
- 请求:----------------------------673935160242881084558504
-Content-Disposition: form-data; name=""; filename="押运员管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8A%BC%E8%BF%90%E5%91%98%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-Ѻ��Ա����,����֤��,Ѻ��֤�����,��Ӧ˾��,�������乫˾
-�ķ��͵���,3.30683E+17,�ط�,��ʿ����,
-
-----------------------------673935160242881084558504--
-
-	应答:{"Stat":"有效数据:1行 失败:1行 失败详情:\n第2行存在错误:身份证为18位\r\n"}
-<notice>   [06-24 10:17:00 806] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 10:17:00 807] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 10:17:03 575] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 10:19:13 392] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 10:19:13 421] BaseTrailerInt.Upload                       L:186  <> T:4-Normal-True- ID:()
-	0108upload总共数据为8条
-<warn>   [06-24 10:19:13 603] BDataTable.SetValue                         L:362  <> T:4-Normal-True- ID:()
-	 Maxweight Type:Decimal Val:
- Err:Input string was not in a correct format.    at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
-   at System.Number.ParseDecimal(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
-   at System.Convert.ToDecimal(String value, IFormatProvider provider)
-   at System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
-   at System.Convert.ToDecimal(Object value)
-   at BaseS.Data.BDataTable.SetValue[T](T& bean, PropertyInfo p, Object dbValue) in D:\yongrong\Base\BaseS\Data\BDataTable.cs:line 334
-<debug>   [06-24 10:19:13 605] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:7 Spend:152.9161
-<info>    [06-24 10:19:13 605] BaseTrailerInt.Upload                       L:199  <> T:4-Normal-True- ID:()
-	0108upload解析成对象集合共:8个
-<notice>   [06-24 10:21:21 908] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 10:21:21 909] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 10:21:23 707] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 10:21:27 841] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
-	执行方法:0108upload
-<notice>   [06-24 10:27:09 597] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 10:27:09 597] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 10:27:11 376] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 10:27:37 031] BaseInt.ExecInt                             L:213  <> T:6-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 10:27:37 083] BaseTrailerInt.Upload                       L:191  <> T:6-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 10:27:37 116] BDataTable.ToList_Old                       L:250  <> T:6-Normal-True- ID:()
-	<<<Return>>>:6 Spend:4.0218
-<info>    [06-24 10:27:37 116] BaseTrailerInt.Upload                       L:204  <> T:6-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<warn>   [06-24 10:27:39 861] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2007挂 已存在
-<warn>   [06-24 10:27:39 898] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2008挂 已存在
-<warn>   [06-24 10:27:39 902] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2009挂 已存在
-<warn>   [06-24 10:27:39 905] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2010挂 已存在
-<warn>   [06-24 10:27:39 907] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2011挂 已存在
-<warn>   [06-24 10:27:39 909] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:6-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2012挂 已存在
-<notice>   [06-24 13:46:20 788] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 13:46:20 789] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 13:46:23 456] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 13:46:35 923] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 13:46:35 961] BaseTrailerInt.Upload                       L:191  <> T:4-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 13:46:36 000] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:6 Spend:2.8501
-<info>    [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:204  <> T:4-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2007","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2007挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2008","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2008挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2009","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2009挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2010","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2010挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2011","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2011挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:46:36 000] BaseTrailerInt.Upload                       L:220  <> T:4-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2012","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2012挂","Transport":null,"Validdate":null}
-<tip>    [06-24 13:46:38 709] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0108upload 耗时:2793ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0108upload) 
- 请求:----------------------------564019130266028785551182
-Content-Disposition: form-data; name=""; filename="挂车管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8C%82%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-�ҳ�����,�ҳ�֤�����,��������(��),�������乫˾
-��C2007��,C2007,50,	�������鴬�����޹�˾
-��C2008��,C2008,50,	�������鴬�����޹�˾
-��C2009��,C2009,50,	�������鴬�����޹�˾
-��C2010��,C2010,50,	�������鴬�����޹�˾
-��C2011��,C2011,50,	�������鴬�����޹�˾
-��C2012��,C2012,50,	�������鴬�����޹�˾
-,,,
-
-----------------------------564019130266028785551182--
-
-	应答:{"Stat":"总共数据:6行 失败:6行  失败详情:\n第2行存在错误:公司名称为空\r\n第3行存在错误:公司名称为空\r\n第4行存在错误:公司名称为空\r\n第5行存在错误:公司名称为空\r\n第6行存在错误:公司名称为空\r\n第7行存在错误:公司名称为空\r\n"}
-<info>    [06-24 13:47:16 388] BaseInt.ExecInt                             L:213  <> T:5-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 13:47:16 389] BaseTrailerInt.Upload                       L:191  <> T:5-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 13:47:16 390] BDataTable.ToList_Old                       L:250  <> T:5-Normal-True- ID:()
-	<<<Return>>>:6 Spend:0.2915
-<info>    [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:204  <> T:5-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2007","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2007挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2008","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2008挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2009","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2009挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2010","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2010挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2011","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2011挂","Transport":null,"Validdate":null}
-<warn>   [06-24 13:47:16 390] BaseTrailerInt.Upload                       L:220  <> T:5-Normal-True- ID:(公司名称为空)
-	{"Carflag":null,"Carid":"C2012","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2012挂","Transport":null,"Validdate":null}
-<tip>    [06-24 13:47:16 433] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0108upload 耗时:44ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0108upload) 
- 请求:----------------------------257582990378626670896399
-Content-Disposition: form-data; name=""; filename="挂车管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8C%82%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-�ҳ�����,�ҳ�֤�����,��������(��),�������乫˾
-��C2007��,C2007,50,	�������鴬�����޹�˾
-��C2008��,C2008,50,	�������鴬�����޹�˾
-��C2009��,C2009,50,	�������鴬�����޹�˾
-��C2010��,C2010,50,	�������鴬�����޹�˾
-��C2011��,C2011,50,	�������鴬�����޹�˾
-��C2012��,C2012,50,	�������鴬�����޹�˾
-,,,
-
-----------------------------257582990378626670896399--
-
-	应答:{"Stat":"总共数据:6行 失败:6行  失败详情:\n第2行存在错误:公司名称为空\r\n第3行存在错误:公司名称为空\r\n第4行存在错误:公司名称为空\r\n第5行存在错误:公司名称为空\r\n第6行存在错误:公司名称为空\r\n第7行存在错误:公司名称为空\r\n"}
-<info>    [06-24 13:47:48 696] BaseInt.ExecInt                             L:213  <> T:5-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 13:47:48 700] BaseTrailerInt.Upload                       L:191  <> T:5-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 13:47:48 702] BDataTable.ToList_Old                       L:250  <> T:5-Normal-True- ID:()
-	<<<Return>>>:6 Spend:1.2992
-<info>    [06-24 13:47:48 703] BaseTrailerInt.Upload                       L:204  <> T:5-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<tip>    [06-24 13:47:49 257] HttpCtrl.RecvHttpReq                        L:107  <O> T:5-Normal-True- ID:(方法:0108upload 耗时:560ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0108upload) 
- 请求:----------------------------949451695588594274144226
-Content-Disposition: form-data; name=""; filename="挂车管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8C%82%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-�ҳ�����,�ҳ�֤�����,��������(��),��������
-��C2007��,C2007,50,"	�������鴬�����޹�˾"
-��C2008��,C2008,50,"	�������鴬�����޹�˾"
-��C2009��,C2009,50,"	�������鴬�����޹�˾"
-��C2010��,C2010,50,"	�������鴬�����޹�˾"
-��C2011��,C2011,50,"	�������鴬�����޹�˾"
-��C2012��,C2012,50,"	�������鴬�����޹�˾"
-
-----------------------------949451695588594274144226--
-
-	应答:{"Stat":"总共数据:6行 失败:0行 "}
-<info>    [06-24 13:47:53 246] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0108upload
-<info>    [06-24 13:47:53 246] BaseTrailerInt.Upload                       L:191  <> T:4-Normal-True- ID:()
-	0108upload总共数据为7条
-<debug>   [06-24 13:47:53 255] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:6 Spend:7.9903
-<info>    [06-24 13:47:53 255] BaseTrailerInt.Upload                       L:204  <> T:4-Normal-True- ID:()
-	0108upload解析成对象集合共:7个
-<warn>   [06-24 13:47:53 283] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2007挂 已存在
-<warn>   [06-24 13:47:53 283] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2007","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2007挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<warn>   [06-24 13:47:53 285] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2008挂 已存在
-<warn>   [06-24 13:47:53 285] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2008","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2008挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<warn>   [06-24 13:47:53 288] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2009挂 已存在
-<warn>   [06-24 13:47:53 288] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2009","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2009挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<warn>   [06-24 13:47:53 290] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2010挂 已存在
-<warn>   [06-24 13:47:53 290] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2010","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2010挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<warn>   [06-24 13:47:53 293] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2011挂 已存在
-<warn>   [06-24 13:47:53 293] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2011","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2011挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<warn>   [06-24 13:47:53 295] BaseTrailerSrvc.AddOrUpdate                 L:95   <> T:4-Normal-True- ID:()
-	BaseTrailer TrailerId:浙C2012挂 已存在
-<warn>   [06-24 13:47:53 295] BaseTrailerInt.Upload                       L:230  <> T:4-Normal-True- ID:(记录已存在,无法新增)
-	{"Carflag":null,"Carid":"C2012","Createtime":null,"Degree":null,"Id":0,"Maxweight":50,"Region":null,"TrailerId":"浙C2012挂","Transport":"\"\t福建港祥船务有限公司\"","Validdate":null}
-<tip>    [06-24 13:47:53 304] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0108upload 耗时:58ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0108upload) 
- 请求:----------------------------583720750595890568356913
-Content-Disposition: form-data; name=""; filename="挂车管理_销售采购部门提供.csv"; filename*="UTF-8''%E6%8C%82%E8%BD%A6%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-�ҳ�����,�ҳ�֤�����,��������(��),��������
-��C2007��,C2007,50,"	�������鴬�����޹�˾"
-��C2008��,C2008,50,"	�������鴬�����޹�˾"
-��C2009��,C2009,50,"	�������鴬�����޹�˾"
-��C2010��,C2010,50,"	�������鴬�����޹�˾"
-��C2011��,C2011,50,"	�������鴬�����޹�˾"
-��C2012��,C2012,50,"	�������鴬�����޹�˾"
-
-----------------------------583720750595890568356913--
-
-	应答:{"Stat":"总共数据:6行 失败:6行  失败详情:\n第2行存在错误:记录已存在,无法新增\r\n第3行存在错误:记录已存在,无法新增\r\n第4行存在错误:记录已存在,无法新增\r\n第5行存在错误:记录已存在,无法新增\r\n第6行存在错误:记录已存在,无法新增\r\n第7行存在错误:记录已存在,无法新增\r\n"}
-<notice>   [06-24 15:53:10 840] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 15:53:10 841] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 15:53:12 916] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 15:53:57 311] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 15:55:26 730] BaseDriverInt.Upload                        L:229  <> T:4-Normal-True- ID:()
-	0109upload总共数据为2条
-<debug>   [06-24 16:22:36 548] TimerCtrl.AllTask                           L:117  <> T:11-Normal-True- ID:()
-	小时任务开始
-<debug>   [06-24 16:22:36 549] TimerCtrl.AllTask                           L:119  <> T:11-Normal-True- ID:()
-	小时任务结束
-<debug>   [06-24 16:22:36 605] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:1 Spend:4.2604
-<info>    [06-24 16:22:36 605] BaseDriverInt.Upload                        L:241  <> T:4-Normal-True- ID:()
-	0109upload解析成对象集合共:2个
-<warn>   [06-24 16:22:36 606] BaseDriverInt.Upload                        L:257  <> T:4-Normal-True- ID:(隶属公司不能为空)
-	{"Cardid":"3.31E+17","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"3.31E+17","Drivervalid":null,"Id":0,"Name":"发123","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"2323","Transport":null,"Whiteflag":null}
-<tip>    [06-24 16:22:39 359] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:1722054ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------008767499590046268960640
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-��123,15268523245,3.31E+17,3.31E+17,23213,2132,2323,����
-
-----------------------------008767499590046268960640--
-
-	应答:{"Stat":"总共数据:1行 失败:1行  失败详情:\n第2行存在错误:隶属公司不能为空\r\n"}
-<info>    [06-24 16:22:43 359] BaseInt.ExecInt                             L:213  <> T:7-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 16:23:10 119] BaseDriverInt.Upload                        L:229  <> T:7-Normal-True- ID:()
-	0109upload总共数据为48条
-<tip>    [06-24 16:23:10 174] HttpCtrl.RecvHttpReq                        L:107  <O> T:7-Normal-True- ID:(方法:0109upload 耗时:26814ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------176922276559221963045224
-Content-Disposition: form-data; name=""; filename="新建 XLS 工作表.xls"; filename*="UTF-8''%E6%96%B0%E5%BB%BA%20XLS%20%E5%B7%A5%E4%BD%9C%E8%A1%A8.xls"
-Content-Type: application/vnd.ms-excel
-
-��ࡱ�                >  ��	                                ����        ����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������#                     	   
-                                                                  ��������"   $   ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������R o o t   E n t r y                                               ��������         �      F            �X=� J�!   �      W o r k b o o k                                                  ������������                                       w:      E T E x t D a t a                                                      ����                                        B      M s o D a t a S t o r e                                           ������������                    `�� J�`�� J�            	   ����   �  ��    �   \ p  p r i n t 0 1                                                                                                B  �a   �  =                �   �   =      R�&8      X@    �    "       �   �    1  �   ��    � �[SO1      ��    ���[SO1      ��    ���[SO1      ��    ���[SO1  �    �    � �[SO1  �    �    � �[SO1  �   
- �    � �[SO1  �   6 �    � �[SO1  �    �   � �[SO1  �    �    � �[SO1  h  6 �    � �[SO1  �   > �    � �[SO1  �   ? �    � �[SO1  �    �    � �[SO1  �   	 �    � �[SO1  �    �    � �[SO1  �   5 �    � �[SO1  �    �   � �[SO1  �   	 �    � �[SO1    6 �    � �[SO1  �   �    � �[SO1  �   5 �    � �[SO1  ,  6 �    � �[SO1  �    �    � �[SO+   " ��" # , # # 0 ; " ��" \ - # , # # 0 5   " ��" # , # # 0 ; [ R e d ] " ��" \ - # , # # 0 7   " ��" # , # # 0 . 0 0 ; " ��" \ - # , # # 0 . 0 0 A   " ��" # , # # 0 . 0 0 ; [ R e d ] " ��" \ - # , # # 0 . 0 0 i * 2 _   " ��" *   # , # # 0 _   ; _   " ��" *   \ - # , # # 0 _   ; _   " ��" *   " - " _   ; _   @ _   W ) ) _   *   # , # # 0 _   ; _   *   \ - # , # # 0 _   ; _   *   " - " _   ; _   @ _   y , : _   " ��" *   # , # # 0 . 0 0 _   ; _   " ��" *   \ - # , # # 0 . 0 0 _   ; _   " ��" *   " - " ? ? _   ; _   @ _   g + 1 _   *   # , # # 0 . 0 0 _   ; _   *   \ - # , # # 0 . 0 0 _   ; _   *   " - " ? ? _   ; _   @ _   /   \ $ # , # # 0 _ ) ; \ ( \ $ # , # # 0 \ ) 9   \ $ # , # # 0 _ ) ; [ R e d ] \ ( \ $ # , # # 0 \ ) ;   \ $ # , # # 0 . 0 0 _ ) ; \ ( \ $ # , # # 0 . 0 0 \ ) E    \ $ # , # # 0 . 0 0 _ ) ; [ R e d ] \ ( \ $ # , # # 0 . 0 0 \ ) �      ��           � �     ��  �        � �     ��  �        � �     ��  �        � �     ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �      ��  �        � �                  � �    * ��  �        � �     ��  �  @ @  	 �     ��  ��� / �    , ��  �        � �    ) ��  �        � �     ��  �  @ @   �     ��  �  @ @  - �    + ��  �        � �     ��  �  @ @   �  	   ��  �  @ @   � �    	 ��  �        � �     ��  �  @ @   � �     ��  �  �     ��  �  @ @  / �     ��  �  @ @   � �     ��  �  @ @   � �     ��  �  @ @   � �     ��  �  @ @   � �     ��  �  @ @  � �     ��  �  @ @  � �     ��  �  @ @  , �     ��  �  @ @  � �     ��  �  @ @  / �     ��  ��� 	 �     ��  ��� 	 �     ��  �ff�� 7 �     ��  �  @ @  * �     ��  �  @ @  5 �     ��  � `@ @  � �  
-   ��  � a@ 0  � �     ��  �  @ @  * �     ��  �  @ @  + �     ��  �  @ @   �     ��  �  @ @  0 �     ��  �  @ @   �     ��  �  @ @   �     ��  �  @ @   �     ��  �  @ @  / �     ��  �  @ @  7 �     ��  �  @ @  3 �     ��  �  @ @   �     ��  �  @ @  + �     ��  �  @ @  6 �     ��  �  @ @   �     ��  �  @ @   �     ��  �  @ @  9 �     ��  �  @ @   �     ��  �  @ @   �    1            � �        x  @ @  � �   1    |  @ @  � �     	   x  @ @   � | |            D ��}A }                   ef                             }� }                	     �        
-     �             �             �             �̙�             ??v�          }A }                   �L                             }A }                     ����             � �          }A }                   23                              }- }                       ��          }- }                     � ��          }} }                	     ����        
-     ����             ����             ����             ����          }A }                   23                              }- }                                  }- }                     �  �          }- }                                   }- }            !         �          }A }            "                                      }A }            #                                      }A }            $       23                              }A }            %       �?                             }A }            &       23                              }� }            '    	     ???�        
-     ???�             ???�             ???�             ����             ???�          }� }            (    	     �        
-     �             �             �             ����             �} �          }� }            )    	     ???�        
-     ???�             ???�             ???�             ����             ����          }A }            *       ef	                             }A }            +                                       }A }            ,         ���             �} �          }U }            -                                                      }A }            .         ����              a �          }A }            /         ���             �e �          }A }            0       ef                             }A }            1                                       }A }            2       ef                             }A }            3       �L                             }A }            4       ef                             }A }            5       �L                             }A }            6                                       }A }            7                                       }A }            8       ef                             }A }            9       �L                             }A }            :                                       }A }            ;       �L                             }A }            <       23                              }A }            =         	                              }A }            >       �L	                             }A }            ?       23	                              }- }            A                      }- }            B                      �  � �� �           � 8^ĉ    � ���!   2 0 %   -   :_��eW[��r�  3 �2 �          &� 2 0 %   -   :_��eW[��r�  3     �	   ��eQ� �          � ��eQ    � ��� ���!   4 0 %   -   :_��eW[��r�  3 �2 �          '� 4 0 %   -   :_��eW[��r�  3     �   �]� �          � �]    � ���!   6 0 %   -   :_��eW[��r�  3 �2 �          (� 6 0 %   -   :_��eW[��r�  3     � ��� ��� �	��	   �lʑ� �          
-� �lʑ    �!   6 0 %   -   :_��eW[��r�  2 �2 �          $� 6 0 %   -   :_��eW[��r�  2     �   h��  4 � �          � h��  4     �   f�JT�e,g� �          � f�JT�e,g    �	    h��� �          � h��    � !  �ʑ'`�e,g�  �          5� �ʑ'`�e,g    � "  h��  1 � �          � h��  1     � #  h��  2 � �          � h��  2     �! $  6 0 %   -   :_��eW[��r�  1 �2 �           � 6 0 %   -   :_��eW[��r�  1     � %  h��  3 � �          � h��  3     �! &  6 0 %   -   :_��eW[��r�  4 �2 �          ,� 6 0 %   -   :_��eW[��r�  4     �	 '  ���Q� �          � ���Q    �	 (  ���{� �          � ���{    � )  �h�gUSCQ<h�  �          � �h�gUSCQ<h    �! *  2 0 %   -   :_��eW[��r�  6 �2 �          2� 2 0 %   -   :_��eW[��r�  6     � +  :_��eW[��r�  2 �& �          !� :_��eW[��r�  2     � ,  ���cUSCQ<h�  �          � ���cUSCQ<h    �	 -  Gl;`� �          � Gl;`    � .  }Y� �          � }Y    �	 /  �-N� �          � �-N    �! 0  2 0 %   -   :_��eW[��r�  5 �2 �          .� 2 0 %   -   :_��eW[��r�  5     � 1  :_��eW[��r�  1 �& �          � :_��eW[��r�  1     �! 2  2 0 %   -   :_��eW[��r�  1 �2 �          � 2 0 %   -   :_��eW[��r�  1     �! 3  4 0 %   -   :_��eW[��r�  1 �2 �          � 4 0 %   -   :_��eW[��r�  1     �! 4  2 0 %   -   :_��eW[��r�  2 �2 �          "� 2 0 %   -   :_��eW[��r�  2     �! 5  4 0 %   -   :_��eW[��r�  2 �2 �          #� 4 0 %   -   :_��eW[��r�  2     � 6  :_��eW[��r�  3 �& �          %� :_��eW[��r�  3     � 7  :_��eW[��r�  4 �& �          )� :_��eW[��r�  4     �! 8  2 0 %   -   :_��eW[��r�  4 �2 �          *� 2 0 %   -   :_��eW[��r�  4     �! 9  4 0 %   -   :_��eW[��r�  4 �2 �          +� 4 0 %   -   :_��eW[��r�  4     � :  :_��eW[��r�  5 �& �          -� :_��eW[��r�  5     �! ;  4 0 %   -   :_��eW[��r�  5 �2 �          /� 4 0 %   -   :_��eW[��r�  5     �! <  6 0 %   -   :_��eW[��r�  5 �2 �          0� 6 0 %   -   :_��eW[��r�  5     � =  :_��eW[��r�  6 �& �          1� :_��eW[��r�  6     �! >  4 0 %   -   :_��eW[��r�  6 �2 �          3� 4 0 %   -   :_��eW[��r�  6     �! ?  6 0 %   -   :_��eW[��r�  6 �2 �          4� 6 0 %   -   :_��eW[��r�  6     c c                   ���              PK
-     �N�@               theme/PK
-     �N�@               theme/theme/PK    �N�@ky�}   �      theme/theme/themeManager.xml�M
-� @�}�w��7c�(Eb�ˮ�� C�AǠҟ����7��՛KY,��e�.���|,���H�,l����xɴ��I�sQ}#Ր���� ֵ+�!�,�^�$j=�GW���)�E�+&
-8�PK    �N�@L���        theme/theme/theme1.xml�YMo7��X콑d�#2"�>�&vDJ��]j�w� );�ɱ@��i�K��z(�H�^�_�6E��rW+R�j��!-b_$�������r�aB�c�aiǯ]��N�4��wG��.���(e)��s,���~p��'��T젎K��T*"�a$.���l�x�$|�Q%���&��U�6+	"��(��&`w�O�w*�(*�xNk
-!�K�w�hǇBv2���Q$$<��U��Wv�T�NaD�[�n��
-�� �n�9y4.'����^�_�\��[�f�Y�� �Ҝ�鳱���5
-��?:|�Z�횅7�o�q�k��A���~0�B-�����^omu�^�r|sߪ���-�A1%�t]m4���Ֆ�	�Nx�Q��
-�KTCY]j�	K�ZK�� P@�$I=9��P�]Dɘ�D�TӠ����P ֆԌ�8�dǿ�!�K��_����3��������>������G?�,��F������O���}���Wn�0����o�~��>Z2z���?�?}��������hl�G$�»�O�;,������񘿙�(FĲ@1�v����ޜ#���c;x�8H�xm���:��L��7��1F�w���ˈ�h�F������A��5w�Vj�����\vclѼMQ*Q�S,=��M1v��>!V\�H��`��'�>"ΐ���*���I /sAH���{�>��U�𱍄����S+���L���r�j���Er8灉�	��0e^?�B�lnqX��� ��yb#�$S��CĘ��i7FI��I�؏�Jy��t����C�w�J7���V������&�e��'3���5̬���a�2 �^'$=S����v���ĹyV�z�?(�=4Koc��-�B�Wh��Л������J��`~����d��{B(�9ŇB��4�p ��N_:qy�b��v2L`�"���Ǚ���x�N�5_9�D�:^����ӷ��Yr����Y��f.��x�Q�ÍA��fky�*�k����.(�7!aLf��v�h-U����� �W�VX�,.+��T�� jeV�������7�`FpmB�*Oy����|���L���R���e�ۊ�����v�L[$�r�I���&b�:��yh�i��˔Z�T(�X4Z����Esv��@SS)h�t��vJ&@Yǟ��>&ԎP'[D#x�H�o��(Kƅ�!�ע��AB$�%I�W�/�@S�!�[m�%�Yy��A��$���L�1�"��ϵ��T�_�,��=��oLg��k�j*�!����G3$�V��e��4�Bv�ׂ���qD����������10�k��!)�8R���Mˮ�s��u�6R�3Ds�3-UQ]ӭb��6�ˋ5y��"��.��K���Z�rN(�����랣!Ԗ�Y��uV�]�ڽc��3���I��\�]�[�#�����:?حV-M�Ji�Å�? ������"��PK
-     �N�@               _rels/PK    �N�@�֧�   6     _rels/.rels���j�0���}Q��%v/��C/�} �(h"���O�
-������=������ ����C?�h�v=��Ʌ��%[xp��{۵_�Pѣ<�1�H�0���O�R�Bd���JE�4b$��q_����6L��R�7`�������0̞O��,�En7�Li�b��/�S���e��е����PK
-     �N�@               theme/theme/_rels/PK    �N�@ѐ��     '   theme/theme/_rels/themeManager.xml.rels��M
-�0���wooӺ�&݈Э���56?$Q���,.�a��i����c2�1h�:�q��m��@RN��;d�`��o7�g�K(M&$R(.1�r'J��ЊT���8��V�"��AȻ�H�u}��|�$�b{� �P����8�g/]�QAsم(����#��L�[����PK    �N�@ �$��        [Content_Types].xml���N�0E�H���-J��@%�ǎǢ|�ș$�ز�U��L�TB� l,���x\���v��T�U^h�d}㨫���)��*1P�'���^ח��0)�T�9��l�#��$��>�����	`?�Cs]7�zb$�x��u��-lV�{9>�D�V�ǋ����,���5�(�Bȥs��zҕhhs�0U~,}�2��To�F�0,�į�*�=댬o[g��v;� �9���'�3��3�y	;	��o�OPK     �N�@ �$��                 ?	  [Content_Types].xmlPK 
-     �N�@                          _rels/PK     �N�@�֧�   6              8  _rels/.relsPK 
-     �N�@                            theme/PK 
-     �N�@                        $   theme/theme/PK 
-     �N�@                          theme/theme/_rels/PK     �N�@ѐ��     '            K  theme/theme/_rels/themeManager.xml.relsPK     �N�@L���                   theme/theme/theme1.xmlPK     �N�@ky�}   �               N   theme/theme/themeManager.xmlPK    	 	 ?  h
-    � �              �X �          �     T a b l e S t y l e M e d i u m 2 P i v o t S t y l e L i g h t 1 6 `   �  �4    S h e e t 1 �  �7    S h e e t 2 �  �8    S h e e t 3 � �                    �  V V � �  �4 � �        �YT Kb:g�Sx ���N���S ~�gq�S ~�gqI{�~ ur_f�f�Lr cf�f�Lr ��^\Џ��lQ�S �S1 2 3  3 3 1 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0  3 3 3 0 6 3 9 5 4 2 0 6 2 1 6 0 0 0  3 3 0 6 8 3 1 9 9 4 0 2 4 5 0 3 2 8 � 
-  �3     
-   	   ����               %  -7       d          ����MbP?_   *    +    �   �          %   �  �      �    �    &        �?'        �?(        �?)        �?� " 	 d         �`�`�?�`�`�? �& �                                    U   }      	@    }    �@   }    �@   }     	@               	        	           	       � 
-     A     � 
-    A    � 
-    B    � 
-    B    � 
-    A    � 
-    A    � 
-    A    � 
-    A        A � 
-    A       A   hg�pB� 
-   B 	   � 
-   B 
-   �    A @��@A  ��@A  ��@ � 
-   C       A �     z > �    @   d                 ���   	g g           ����D  
-   	   ����                %       d          ����MbP?_   *    +    �   �          %   �  �      �    �    &        �?'        �?(        �?)        �?� " 	 d         �`�`�?�`�`�? �& �                                    U                   > �     @   d                      �   	g g           ����D  
-   	   ����                %       d          ����MbP?_   *    +    �   �          %   �  �      �    �    &        �?'        �?(        �?)        �?� " 	 d         �`�`�?�`�`�? �& �                                    U                   > �     @   d                      �   	g g           ����D  
-                                                                                                                                                                                                                                                                                                                                                                                                                                    	   ����         ����            ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������	  ��       �&��5�D ���  ��      ��      ��      ��      ��      ��      ��      ��      ��      ��      ��      ��      ��      ��      ��                 �   �� ��   ��                �   ��  �   ��         �   ��      ��             �� ��       �   ��      ��      ��      ��      ��    ��    ��  �   ��    ��  �   �� ��   �� ��   �� ��   ��  �   ��  �   ��    ��    ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��  �   ��       ��   @���  @���   @�
-                                                                 ��  
-                     �����Oh�� +'��0   �         H      �P      X      p      �      �      �              �             p r i n t 0 1         p r i n t 0 1   @    �b J�@   ���� J�      W P S   O f f i c e                     ��  
-                     ��՜.�� +,��D   ��՜.�� +,���   H         (      �0      8      @      �           S u m m a r y I n f o r m a t i o n                           (       ����                                    
-   �        D o c u m e n t S u m m a r y I n f o r m a t i o n           8  ������������                                       $                                                                          ������������                                                                                                                    ������������                                                           �          (      \      �d      l            K S O P r o d u c t B u i l d V e r        �             2 0 5 2 - 1 1 . 1 . 0 . 9 7 4 0                                                                                                                                                                                                                                                                                                                                                                 
-----------------------------176922276559221963045224--
-
-	应答:{"Stat":"文件编码错误！"}
-<notice>   [06-24 17:14:34 421] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:14:34 422] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:14:37 959] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:14:48 156] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 17:14:48 197] BaseDriverInt.Upload                        L:229  <> T:4-Normal-True- ID:()
-	0109upload总共数据为2条
-<debug>   [06-24 17:14:54 319] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:1 Spend:19.8993
-<notice>   [06-24 17:28:43 288] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:28:43 289] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:28:44 624] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:28:58 980] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 17:28:59 012] BaseDriverInt.Upload                        L:229  <> T:4-Normal-True- ID:()
-	0109upload总共数据为2条
-<debug>   [06-24 17:28:59 054] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:1 Spend:2.9679
-<info>    [06-24 17:28:59 054] BaseDriverInt.Upload                        L:241  <> T:4-Normal-True- ID:()
-	0109upload解析成对象集合共:2个
-<warn>   [06-24 17:28:59 054] BaseDriverInt.Upload                        L:257  <> T:4-Normal-True- ID:(手机号码为11位)
-	{"Cardid":"15268523245\"","Code":null,"Createtime":null,"Driverdegree":"331000000000000000\"","Driverid":"\"","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"\"","TractorId":"\"","TrailerId":"3310000000005500000\"","Transport":null,"Whiteflag":null}
-<tip>    [06-24 17:29:01 882] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:2906ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------991732123835484158601884
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-��������,",15268523245",",331000000000000000",",3310000000005500000",23213,2132,23234,����
-
-----------------------------991732123835484158601884--
-
-	应答:{"Stat":"总共数据:1行 失败:1行  失败详情:\n第2行存在错误:手机号码为11位\r\n"}
-<info>    [06-24 17:29:12 723] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 17:29:12 723] BaseDriverInt.Upload                        L:229  <> T:4-Normal-True- ID:()
-	0109upload总共数据为2条
-<debug>   [06-24 17:29:12 728] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:1 Spend:0.2066
-<info>    [06-24 17:29:12 728] BaseDriverInt.Upload                        L:241  <> T:4-Normal-True- ID:()
-	0109upload解析成对象集合共:2个
-<warn>   [06-24 17:29:12 728] BaseDriverInt.Upload                        L:257  <> T:4-Normal-True- ID:(手机号码为11位)
-	{"Cardid":"15268523245\"","Code":null,"Createtime":null,"Driverdegree":"331000000000000000\"","Driverid":"\"","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"\"","TractorId":"\"","TrailerId":"3310000000005500000\"","Transport":null,"Whiteflag":null}
-<tip>    [06-24 17:29:12 749] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:25ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------679410606557094824714713
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-��������,",15268523245",",331000000000000000",",3310000000005500000",23213,2132,23234,����
-
-----------------------------679410606557094824714713--
-
-	应答:{"Stat":"总共数据:1行 失败:1行  失败详情:\n第2行存在错误:手机号码为11位\r\n"}
-<notice>   [06-24 17:35:11 912] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:35:11 912] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:35:14 822] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:35:15 963] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:37:10 748] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:37:10 748] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:37:12 373] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:37:22 264] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:41:58 505] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:41:58 515] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:42:00 327] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:42:56 314] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 17:45:21 551] BaseDriverInt.Upload                        L:236  <> T:4-Normal-True- ID:()
-	0109upload总共数据为5条
-<tip>    [06-24 17:45:24 143] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:147832ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------798133789674913384115921
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-��������,15268523245,331000000000000000,3310000000005500000,23213,2132,23234,����
-��������,15268523245,331000000000000000,3310000000005500000,23213,2132,23234,����
-
-----------------------------798133789674913384115921--
-
-	应答:{"Stat":"文件编码错误！"}
-<info>    [06-24 17:45:57 646] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:52:52 255] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:52:52 255] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:52:53 953] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:53:05 092] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:55:26 046] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:55:26 046] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:55:27 508] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:55:47 872] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:57:03 594] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:57:03 594] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:57:05 779] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<info>    [06-24 17:57:33 555] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<notice>   [06-24 17:59:53 574] MainCtrl.Start                              L:34   <> T:1-Normal-False- ID:()
-	系统初始化开始
-<warn>   [06-24 17:59:53 574] MainCtrl.Start                              L:36   <> T:1-Normal-False- ID:()
-	初始化完毕,平台接口准备开启!
-<warn>   [06-24 17:59:54 556] BHttpServer5.Start                          L:69   <> T:1-Normal-False- ID:()
-	Http服务 IPAddress.Any Port:20007 启动
-<debug>   [06-24 18:00:00 570] TimerCtrl.AllTask                           L:117  <> T:4-Normal-True- ID:()
-	小时任务开始
-<debug>   [06-24 18:00:00 570] TimerCtrl.AllTask                           L:119  <> T:4-Normal-True- ID:()
-	小时任务结束
-<info>    [06-24 18:00:02 678] BaseInt.ExecInt                             L:213  <> T:4-Normal-True- ID:()
-	执行方法:0109upload
-<info>    [06-24 18:00:04 505] BaseDriverInt.Upload                        L:236  <> T:4-Normal-True- ID:()
-	0109upload总共数据为3条
-<debug>   [06-24 18:06:01 442] BDataTable.ToList_Old                       L:250  <> T:4-Normal-True- ID:()
-	<<<Return>>>:2 Spend:2.7384
-<info>    [06-24 18:06:01 442] BaseDriverInt.Upload                        L:248  <> T:4-Normal-True- ID:()
-	0109upload解析成对象集合共:3个
-<warn>   [06-24 18:06:01 443] BaseDriverInt.Upload                        L:264  <> T:4-Normal-True- ID:(隶属公司不能为空)
-	{"Cardid":"331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
-<warn>   [06-24 18:06:01 444] BaseDriverInt.Upload                        L:264  <> T:4-Normal-True- ID:(隶属公司不能为空)
-	{"Cardid":"331000000000000000","Code":null,"Createtime":null,"Driverdegree":"23213","Driverid":"3310000000000000000","Drivervalid":null,"Id":0,"Name":"发啦啦啦","Otherid":null,"Othervalid":null,"Tel":"15268523245","TractorId":"2132","TrailerId":"23234","Transport":null,"Whiteflag":null}
-<tip>    [06-24 18:06:03 997] HttpCtrl.RecvHttpReq                        L:107  <O> T:4-Normal-True- ID:(方法:0109upload 耗时:361323ms <<<<<<<)
-	客户端:(192.168.1.182-) POST方式访问URL:(192.168.1.182:20007/?cmd=0109upload) 
- 请求:----------------------------106910173483167168250799
-Content-Disposition: form-data; name=""; filename="司机管理_销售采购部门提供.csv"; filename*="UTF-8''%E5%8F%B8%E6%9C%BA%E7%AE%A1%E7%90%86_%E9%94%80%E5%94%AE%E9%87%87%E8%B4%AD%E9%83%A8%E9%97%A8%E6%8F%90%E4%BE%9B.csv"
-Content-Type: text/csv
-
-����,�ֻ�����,����֤��,���ձ��,���յȼ�,ǣ��������,�ҳ�����,�������乫˾
-��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018/3/24
-��������,*15268523245,*331000000000000000,*3310000000000000000,23213,2132,23234,2018.23.45
-
-----------------------------106910173483167168250799--
-
-	应答:{"Stat":"总共数据:2行 失败:2行  失败详情:\n第2行存在错误:隶属公司不能为空\r\n第3行存在错误:隶属公司不能为空\r\n"}
-<info>    [06-24 18:06:24 528] BaseInt.ExecInt                             L:213  <> T:5-Normal-True- ID:()
-	执行方法:0109upload

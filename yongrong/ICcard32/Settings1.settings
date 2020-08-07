@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ICcard32" GeneratedClassName="Settings1">
-  <Profiles />
-  <Settings>
-    <Setting Name="ServerUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://27.153.188.110:8001?cmd=ic_queryorder</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>

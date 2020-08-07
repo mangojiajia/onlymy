@@ -1,7 +1,0 @@
-﻿{
-"HttpFlag":true,
-"Ports":[20007],
-"NginxIpRoute":"X-Real-IP",
-"CmdName":"cmd",
-"ClientIPName":"clientip"
-}
